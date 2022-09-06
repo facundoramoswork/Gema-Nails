@@ -1,0 +1,703 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+}
+
+.principal {
+	color: rgb(0, 0, 0);
+	font-size: 1.8rem;
+}
+
+.principal__titulo {
+	color: #dd4fb5;
+	font-size: 9rem;
+	font-family: "Dancing Script", cursive;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.principal__titulo--bienvenida {
+	color: #19a77ef8;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.principal__titulo--link1 {
+	color: #c89eff;
+	text-align: right;
+}
+
+#fondoPagina1 {
+	background: rgba(255, 255, 255, 1);
+	background: -moz-linear-gradient(
+		-45deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 9%,
+		rgba(255, 204, 232, 1) 35%,
+		rgba(255, 173, 216, 1) 48%,
+		rgba(255, 158, 211, 1) 100%
+	);
+	background: -webkit-gradient(
+		left top,
+		right bottom,
+		color-stop(0%, rgba(255, 255, 255, 1)),
+		color-stop(9%, rgba(255, 255, 255, 1)),
+		color-stop(35%, rgba(255, 204, 232, 1)),
+		color-stop(48%, rgba(255, 173, 216, 1)),
+		color-stop(100%, rgba(255, 158, 211, 1))
+	);
+	background: -webkit-linear-gradient(
+		-45deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 9%,
+		rgba(255, 204, 232, 1) 35%,
+		rgba(255, 173, 216, 1) 48%,
+		rgba(255, 158, 211, 1) 100%
+	);
+	background: -o-linear-gradient(
+		-45deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 9%,
+		rgba(255, 204, 232, 1) 35%,
+		rgba(255, 173, 216, 1) 48%,
+		rgba(255, 158, 211, 1) 100%
+	);
+	background: -ms-linear-gradient(
+		-45deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 9%,
+		rgba(255, 204, 232, 1) 35%,
+		rgba(255, 173, 216, 1) 48%,
+		rgba(255, 158, 211, 1) 100%
+	);
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 9%,
+		rgba(255, 204, 232, 1) 35%,
+		rgba(255, 173, 216, 1) 48%,
+		rgba(255, 158, 211, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ff9ed3', GradientType=1 );
+}
+
+#fondoPagina2 {
+	background-color: #e2fdfd;
+}
+
+.fondoRedes {
+	background-color: #fde2ec;
+}
+
+.menuSuperior {
+	z-index: 1000;
+}
+
+.menuSuperior nav {
+	background-color: #c89effc2;
+	background-image: url(../multimedia/mano\ descendiendo1.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	display: flex;
+	flex-flow: row, nowrap;
+	justify-content:  flex-end;
+	margin: 0px;
+	padding-top: 40px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 40px;
+	text-align: right;
+}
+
+.menuSuperior ul li {
+	color: aquamarine;
+	list-style-type: square;
+	font-size: 2rem;
+	font-weight: normal;
+}
+.menuSuperior ul li {
+	display: inline-block;
+}
+
+.menuSuperior {
+	position: sticky;
+	top: 0%;
+}
+
+.home {
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+.clientes {
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+.contacto {
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+.preguntas {
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.espaciadoLineas {
+	line-height: 1.3;
+}
+
+.imagenLogo {
+	width: 100px;
+	height: 120px;
+	background-position: 0%;
+	z-index: 1;
+}
+
+.imagenLogo {
+	position: relative;
+}
+
+.orientacionLogo {
+	position: absolute;
+	top: -40px;
+	left: 70px;
+	right: 20px;
+	bottom: 20px;
+}
+/* .orientacionLogo img{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+} */
+.imagenBienvenida {
+	background-image: url(../multimedia/fondo1.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top: 30px;
+	margin-right: 60px;
+	margin-left: 60px;
+	margin-bottom: 40px;
+
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+
+	border-top-style: inset;
+	border-left-style: inset;
+	border-bottom-style: none;
+	border-left-color: #c89eff;
+	border-top-color: #ff53d4;
+	border-width: 2px;
+}
+
+.redesFacebook img {
+	width: 6rem;
+}
+
+.redesFacebook {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	padding: 10px;
+}
+
+.redesInsta img {
+	width: 6rem;
+}
+
+.redesInsta {
+	display: block;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	padding: 10px;
+}
+
+.redesWhatsapp img {
+	width: 12rem;
+}
+/* DEBAJO VIENE LINK A WSP QUE POR AHORA NO TENGO POR LO QUE PONGO OTRO LINK SORPRESA */
+.redesWhatsapp {
+	position: fixed;
+	right: 0px;
+	bottom: 20px;
+}
+
+.caracteristicas {
+	position: relative;
+
+}
+/* LAS 3 IMAGENES SUELTAS DEL INDEX */
+.inlineImagenes1 {
+	position: absolute;
+	grid-area: parrafo1;
+	top: 0px;
+	left: 430px;
+	bottom: 100px;
+	right: 50px;
+}
+
+.inlineImagen24 {
+	grid-area: imagen1;
+	width: 100px;
+	margin-left: 400px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding-left: 40px;
+}
+
+.inlineImagenes2 {
+	position: absolute;
+	grid-area: parrafo2;
+	top: 0px;
+	left: 880px;
+	bottom: 200px;
+	right: 20px;
+}
+
+.inlineImagenCredit {
+	grid-area: imagen2;
+	width: 90px;
+	margin-left: 360px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding-left: 40px;
+}
+
+.inlineImagenes3 {
+	position: absolute;
+	grid-area: parrafo3;
+	top: 0px;
+	left: 1350px;
+	bottom: 100px;
+	right: 10px;
+}
+
+.inlineImagenAmor {
+	grid-area: imagen3;
+	width: 100px;
+	margin-left: 400px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+
+.colorFooter {
+	color: #07440f;
+}
+
+/* CSS Para html de preguntas */
+
+.h1Faqs {
+	color: #c89eff;
+	text-align: start;
+}
+
+.mainSecundarios h3{
+	color: #8093f1;
+	text-align: center;
+}
+
+.parrafo {
+	text-align: center;
+}
+
+.navFooter{
+	background-color: #c89effc2;
+	padding: 50px;
+	font-size: 1.5rem;
+}
+
+.navFooter ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.navFooter li{
+	padding: 2px;
+}
+
+.menuSecundario ul li {
+	display: inline-block;
+	margin: 8px;
+	padding: 8px;
+	text-align: right;
+}
+
+.mainSecundarios {
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+.subtituloSecundarios {
+	font-weight: 700;
+	color: #8093f1;
+	font-size: 2.2rem;
+}
+/* ESTILOS PARA PAGINA CONTACTO */
+input[type="text"] {
+	color: #c89eff;
+	width: 300px;
+}
+
+input[type="radio"] {
+	color: #b388eb;
+	width: 40px;
+	margin: 10px;
+	padding: 10px;
+}
+
+input[type="checkbox"] {
+	width: 40px;
+	margin: 10px;
+}
+
+.formulario {
+	font-size: 1.5rem;
+}
+
+#formulario {
+	font-size: 1.7rem;
+	text-align: left;
+	margin-left: 30px;
+}
+
+h4 {
+	font-size: 2rem;
+	color: #ff6ad5;
+}
+
+/* grilla con imagen en izq y texto der */
+.grid{
+	display: grid;
+	grid-template-columns: 1fr, 1fr;
+	grid-template-rows: 2fr, 2fr;
+	grid-template-areas:
+	"lorito textoLorito"
+	"cacatua textoCacatua"
+	;
+
+	justify-items: center;
+	align-items: center;
+}
+
+.lorito{
+	grid-area: lorito;
+	justify-self: center;
+	align-self: center;
+	
+}
+
+.fotoLorito{
+	height: 30rem;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.textoLorito{
+	grid-area: textoLorito;
+	padding: 2rem;
+	margin: 2rem;
+}
+
+.cacatua{
+	grid-area: cacatua;
+	justify-self:center;
+	align-self: center;
+	padding: 3rem;
+	margin: 5rem;
+	
+	
+}
+
+.textoCacatua{
+	grid-area: textoCacatua;
+	padding: 2rem;
+	margin: 2rem;
+}
+
+
+
+.mainSecundarios img{
+	width: 40rem;
+	height: auto;
+}
+
+	/* GRILLA DE GALERIA */
+.mainSecundarios{
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: 1fr auto;
+	grid-template-areas: 
+	"texto1 imagen1 imagen2"
+	" . imagen3 imagen4"
+	" . imagen5 imagen6"
+	"texto2 imagen7 imagen8"
+	"texto3 imagen9 imagen10"
+	;
+	
+	grid-gap: 3rem;
+	justify-content: end;
+	justify-items: end;
+	align-items: center;
+	margin: 1.8rem;
+	padding: 1rem;
+	
+}
+
+.galeria1{
+	grid-area: imagen1;
+	
+}
+
+.galeria2{
+	grid-area: imagen2;
+}
+
+.galeria3{
+	grid-area: imagen3;
+}
+
+.galeria4{
+	grid-area: imagen4;
+}
+
+.galeria5{
+	grid-area: imagen5;
+}
+
+.galeria6{
+	grid-area: imagen6;
+}
+
+.galeria7{
+	grid-area: imagen7;
+}
+
+.galeria8{
+	grid-area: imagen8;
+}
+.galeria9{
+	grid-area: imagen9;
+}
+
+.galeria10{
+	grid-area: imagen10;
+}
+
+.texto1{
+	grid-area: texto1;
+}
+
+.texto2{
+	grid-area: texto2;
+}
+
+.texto3{
+	grid-area: texto3;
+}
+
+
+.navFlex ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content:flex-start;
+	font-size: 1.6rem;
+	background-color: #c89effc2;
+	background-image: url(../multimedia/mano\ descendiendo1.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	padding: 5rem;
+}
+
+.navFlex ul li{
+	list-style: none ;
+	margin: 5px;
+	padding: 5px;
+}
+
+/* /////CONTACTO///// */
+
+#formulario{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+	"opciones checkbox"
+	"fieldset ."
+	" textarea ."
+	"botones ."
+	;
+	row-gap: 5rem;
+	column-gap: 3rem;
+	justify-content: center;
+	align-content: center;
+	justify-items: start;
+
+} 
+
+.opciones{
+	grid-area: opciones;
+	display: grid;
+	grid-column: start;
+	font-size: 2rem;
+}
+
+.fieldset{
+	grid-area: fieldset;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+
+}
+
+.textarea{
+	grid-area: textarea;
+}
+
+.botones{
+	grid-area: botones;
+}
+
+
+.checkbox{
+	grid-area: checkbox;
+	display: flex;
+	flex-direction: column ;
+	font-size: 2rem;
+	
+}
+
+.instagramContacto{
+	font-size: 2rem;
+	color: #8093f1;
+	margin: 1rem;
+	text-align: start;
+}
+
+
+
+
+.navContacto{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 8px;
+	padding: 8px;
+	font-size: 1.6rem;
+	align-items: center;
+}
+
+.resaltarFormulario{
+	font-size: 4rem;
+	color: #8093f1;
+}
+
+#formulario h3{
+	color: #b388eb;
+}
+
+
+
+
+
+
+
+
+
+
+/* .caracteristicas{
+	display: grid;
+	grid-template-columns: 1fr, 1fr, 1fr;
+	grid-template-rows: 1fr, 1fr;
+	grid-template-areas: 
+	"parrafo1 parrafo2 parrafo3"
+	"imagen1 imagen2 imagen3"
+	;
+}
+ */
+
+.fondoRedes{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+#final{
+	display: flex;
+	flex-flow: row, wrap;
+	justify-content:space-between;
+	padding:2rem;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+
+.copyFooter{
+	background-color: #c89effc2;
+	color: black;
+	font-size: 1.3rem;
+}
+
+.logoContacto{
+	width: 14rem;
+	height: 14rem;
+	padding: 2rem;
+	
+}
+
+
+
+
+
+
+
+/* BREAKPOINT PARA TABLET */
+
+/* .formato{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+
+}
+
+@media screen and (max-width:760px){
+	.tablet{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+	}
+} */
