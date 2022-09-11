@@ -8,10 +8,18 @@
 
 		<link rel="shorcut icon" href="../multimedia/faviconSecundario.ico" />
 
+		<!-- ///LINK DE AOS CSS/// -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<!-- ///LINK DE ANIMATE CSS/// --> <!-- SIN USO POR AHORA EN ESTA SECCION -->
+		<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 		<link rel="stylesheet" href="../css/styles.css" />
 	</head>
 	<body id="fondoPagina1">
-		<!-- ESTA SECCION NO ME QUEDA COMO DEBERIA, VOY A CORREGIRLA DANDOLE ESTILOS CON GRIDS Y FLEX EN EL PROXIMO DESAFIO -->
 		<header id="arriba">
 			<nav class="navFlex">
 				<ul>
@@ -23,7 +31,6 @@
 			</nav>
 		</header>
 
-		
 		<main class="mainSecundarios">
 			
 			<h3 class="texto1">Nuestros resultados</h3>
@@ -34,11 +41,11 @@
 			<img src="../multimedia/nail5.png" class="galeria5" />
 			<img src="../multimedia/nail6.png" class="galeria6"/>
 			
-			<h3 class="texto2">Nuestro entorno laboral</h3>
+			<h3 class="texto2" data-aos="zoom-out-up">Nuestro entorno laboral</h3>
 				<img src="../multimedia/gabinete0.jpg" class="galeria7">
 				<img src="../multimedia/gabinete2.jpg" class="galeria8">
 
-			<h3 class="texto3">Nuestro equimaniento</h3>
+			<h3 class="texto3" data-aos="zoom-out-up">Nuestro equimaniento</h3>
 			
 				<img src="../multimedia/1111.jpg" class="galeria9">
 
@@ -47,8 +54,12 @@
 			
 		</main>
 
-		<footer class="colorFooter">
+		<footer class="copyFooter">
 			<p>Copyright 2022 © Facundo webs</p>
 		</footer>
+<!-- SCRIPT PARA ANIMACION DE GALERIA CON AOS -->
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>

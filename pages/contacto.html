@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contactanos</title>
-
+    
     <link rel="shorcut icon" href="../multimedia/faviconSecundario.ico">
+
+    <!-- ANIMACION DE LOGO SUPERIOR CON ANIMATE CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     
     <link rel="stylesheet"  href="../css/styles.css">
     
   </head>
-  <body id="fondoPagina1">
+  <body>
     <header class="navContacto">
         <nav class="menuSecundario">
           <ul>
@@ -21,13 +27,13 @@
           </ul>
         </nav>
       
-      <a href="../index.html"> <img src="../multimedia/logo gema sin bordes.png" class="logoContacto"> </a>
+      <a href="../index.html"> <img src="../multimedia/logo_gemanuevopnggg.png" class= "animate__animated animate__flipInY"> </a>
       <!-- NUEVO LINK "INVISIBLE" HACIA EL HOME" -->
     </header>
 
     <main id="formulario">
-      <h3>Completá los siguientes campos:</h3>
       <section class="formulario">
+        <h2>Completá los siguientes campos:</h2>
         <form action="" method="" class="opciones"> 
           <!-- OPCIONES CHECKBOX -->
         <label for="Uñas"> <h3>Que servicio deseas que realicemos?:</h3> </label>
@@ -41,25 +47,19 @@
 
         <input type="checkbox" value="3" name="Uñas" />UÑAS Y PESTAÑAS
 
-        <!-- LOS BR SERAN ELIMINADOS EN EL PROXIMO DESAFIO CUANDO REDISEÑE UN POCO EL CODIGO CON FLEX Y GRIDS -->
-
     </section>
             <!-- RADIO BUTTONS -->
     <section class="checkbox">
-        <h4> Ahora seleccioná una de las siguientes opciones: </h4>
+        <h2> Ahora seleccioná una de las siguientes opciones: </h2>
 
         <h3>Como es el estado de tus uñas y pestañas? </h3>
         <label for="estado" class="" > </label>
         
+        <input type="radio" name="estado" value="naturales">NATURALES/SIN PINTAR</input>
 
-        <input type="radio" name="estado" value="naturales"> Naturales/sin pintar</input>
-      
-
-
-        <input type="radio" name="estado" value="muy deñadas"> Muy dañadas </input>
+        <input type="radio" name="estado" value="muy deñadas"> MUY DAÑADAS  </input>
         
-
-        <input type="radio" name="estado" value="pintadas"> Pintadas </input>
+        <input type="radio" name="estado" value="pintadas"> PINTADAS </input>
 
       
     </section>
@@ -70,7 +70,6 @@
           <!-- CASILLAS DE TEXTO -->
           <h3>Dejanos tus datos solictados aqui debajo: </h3></legend>
           
-
           <label for="nombre cliente"> Tu nombre: </label>
           <input type="text" name="nombre cliente" />
           
@@ -126,13 +125,14 @@
     </form>
 
       </main>
-      <div class="instagramContacto">
+
+      <section class="instagramContacto">
         <h5>
           O contactanos por Instagram!
         </h5>
-        <a href="https://www.instagram.com/nailsgema6/" target="_blank">instagram</a> <!-- Esto iria con imagen del logo -->
-        
-      </div> <!-- TAMBIEN INCLUIRIA WHATSAPP EN EL MISMO ESTILO-->
+        <a href= "https://www.instagram.com/nailsgema6/" target="_blank" class> <img src="../multimedia/instagram (2).png" alt="fotoig"></a>
+
+      </section> 
 
     <footer>
       <div class="navFooter">

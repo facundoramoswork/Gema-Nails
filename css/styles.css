@@ -9,33 +9,10 @@ html {
 
 body {
 	font-family: "Lato", sans-serif;
+	
 }
 
-.principal {
-	color: rgb(0, 0, 0);
-	font-size: 1.8rem;
-}
-
-.principal__titulo {
-	color: #dd4fb5;
-	font-size: 9rem;
-	font-family: "Dancing Script", cursive;
-	margin-left: 20px;
-	margin-top: 20px;
-}
-
-.principal__titulo--bienvenida {
-	color: #19a77ef8;
-	text-align: center;
-	font-size: 2rem;
-}
-
-.principal__titulo--link1 {
-	color: #c89eff;
-	text-align: right;
-}
-
-#fondoPagina1 {
+.container{
 	background: rgba(255, 255, 255, 1);
 	background: -moz-linear-gradient(
 		-45deg,
@@ -87,15 +64,45 @@ body {
 		rgba(255, 158, 211, 1) 100%
 	);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ff9ed3', GradientType=1 );
+	font-size: 1.6rem;
 }
+
+.principal {
+	background-color: #c4ccff;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 120rem
+	;
+}
+
+.principal__titulo {
+	color: #dd4fb5;
+	font-size: 9rem;
+	font-family: "Dancing Script", cursive;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.principal__titulo--bienvenida {
+	color: #64dbf8;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.principal__titulo--link1 {
+	color: #c89eff;
+	text-align: right;
+}
+
 
 #fondoPagina2 {
 	background-color: #e2fdfd;
 }
 
-.fondoRedes {
-	background-color: #fde2ec;
-}
 
 .menuSuperior {
 	z-index: 1000;
@@ -107,13 +114,13 @@ body {
 	background-repeat: no-repeat;
 	background-size: auto;
 	display: flex;
-	flex-flow: row, nowrap;
+	flex-direction: row;
 	justify-content:  flex-end;
 	margin: 0px;
-	padding-top: 40px;
-	padding-left: 60px;
-	padding-right: 60px;
-	padding-bottom: 40px;
+	padding-top: 4rem;
+	padding-left: 0.6rem;
+	padding-right: 0.6rem;
+	padding-bottom: 4rem;
 	text-align: right;
 }
 
@@ -165,7 +172,7 @@ a {
 }
 
 .espaciadoLineas {
-	line-height: 1.3;
+	line-height: 1.4;
 }
 
 .imagenLogo {
@@ -179,31 +186,32 @@ a {
 	position: relative;
 }
 
-.orientacionLogo {
+.animate__animated.animate__shakeX{
 	position: absolute;
-	top: -40px;
-	left: 70px;
-	right: 20px;
+	top: -50px;
+	left: -60px;
+	right: 0px;
 	bottom: 20px;
 }
-/* .orientacionLogo img{
+
+.animate__animated.animate__shakeX img{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-} */
+}
 .imagenBienvenida {
-	background-image: url(../multimedia/fondo1.jpg);
-	background-size: 100%;
+	background-image: url(../multimedia/imagenpestaniasunias1.jpg);
+	height: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
-	margin-top: 30px;
-	margin-right: 60px;
-	margin-left: 60px;
-	margin-bottom: 40px;
-
-	padding-top: 20px;
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-bottom: 20px;
+	margin-top: 0.3rem;
+	margin-right: 0.6rem;
+	margin-left: 0.6rem;
+	margin-bottom: 0.4rem;
+	padding-top: 0.2rem;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+	padding-bottom: 0.2rem;
 
 	border-top-style: inset;
 	border-left-style: inset;
@@ -211,6 +219,14 @@ a {
 	border-left-color: #c89eff;
 	border-top-color: #ff53d4;
 	border-width: 2px;
+}
+
+.imagenBienvenida p{
+	font-size: 2.4rem;
+}
+
+.grid p{
+	font-size: 1.7rem;
 }
 
 .redesFacebook img {
@@ -246,18 +262,70 @@ a {
 .redesWhatsapp {
 	position: fixed;
 	right: 0px;
-	bottom: 20px;
+	bottom: 40px;
 }
 
+/* LAS 3 IMAGENES SUELTAS DEL INDEX */
 .caracteristicas {
 	position: relative;
 
 }
-/* LAS 3 IMAGENES SUELTAS DEL INDEX */
+
+.iconos{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr ;
+	grid-template-areas:
+	"textoIcono1 textoIcono2 textoIcono3"
+	"icono1 icono2 icono3"
+	;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+
+}
+
+.textoIcono1{
+	grid-area: textoIcono1;
+}
+
+.textoIcono2{
+	grid-area: textoIcono2;
+}
+
+.textoIcono3{
+	grid-area: textoIcono3;
+}
+
+.icono1{
+	grid-area: icono1;
+}
+
+.icono2{
+	grid-area: icono2;
+	margin-bottom: 10px;
+}
+
+.icono3{
+	grid-area: icono3;
+}
+
+
+.iconos img{
+	width: 10rem;
+	height: auto;
+}
+
+.iconos p{
+	align-self: center;
+}
+
+/* 
 .inlineImagenes1 {
 	position: absolute;
 	grid-area: parrafo1;
-	top: 0px;
+	top: 20px;
 	left: 430px;
 	bottom: 100px;
 	right: 50px;
@@ -307,9 +375,12 @@ a {
 	margin-bottom: 10px;
 	padding-left: 10px;
 }
+ */
 
 .colorFooter {
-	color: #07440f;
+	color: black;
+	align-self: flex-end;
+	font-size: 1.3rem;
 }
 
 /* CSS Para html de preguntas */
@@ -363,6 +434,7 @@ a {
 	color: #8093f1;
 	font-size: 2.2rem;
 }
+
 /* ESTILOS PARA PAGINA CONTACTO */
 input[type="text"] {
 	color: #c89eff;
@@ -386,9 +458,10 @@ input[type="checkbox"] {
 }
 
 #formulario {
+	background-color: #fcadefda;
 	font-size: 1.7rem;
 	text-align: left;
-	margin-left: 30px;
+	padding: 2rem;
 }
 
 h4 {
@@ -399,8 +472,8 @@ h4 {
 /* grilla con imagen en izq y texto der */
 .grid{
 	display: grid;
-	grid-template-columns: 1fr, 1fr;
-	grid-template-rows: 2fr, 2fr;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2fr 2fr;
 	grid-template-areas:
 	"lorito textoLorito"
 	"cacatua textoCacatua"
@@ -418,9 +491,8 @@ h4 {
 }
 
 .fotoLorito{
-	height: 30rem;
-	padding: 1rem;
-	margin: 1rem;
+	width: 100%;
+	height: auto;
 }
 
 .textoLorito{
@@ -445,14 +517,19 @@ h4 {
 	margin: 2rem;
 }
 
-
-
 .mainSecundarios img{
 	width: 40rem;
 	height: auto;
+	margin: 0rem;
+	transition: width 2s;
+	filter: grayscale(100%);
 }
 
-	/* GRILLA DE GALERIA */
+.mainSecundarios{
+	background-color: #CFBFB8;
+}
+
+	/* /////GRILLA DE GALERIA /////*/
 .mainSecundarios{
 	display: grid;
 	grid-template-columns: 1fr auto;
@@ -469,8 +546,8 @@ h4 {
 	justify-content: end;
 	justify-items: end;
 	align-items: center;
-	margin: 1.8rem;
-	padding: 1rem;
+	margin: 0rem;
+	padding: 6rem;
 	
 }
 
@@ -551,11 +628,11 @@ h4 {
 #formulario{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: repeat (4 1fr);
 	grid-template-areas: 
-	"opciones checkbox"
-	"fieldset ."
-	" textarea ."
+	"opciones ."
+	" checkbox fieldset "
+	"textarea ."
 	"botones ."
 	;
 	row-gap: 5rem;
@@ -571,6 +648,13 @@ h4 {
 	display: grid;
 	grid-column: start;
 	font-size: 2rem;
+	justify-self: start;
+}
+
+.formulario h2{
+	color: #ff53d4;
+	font-size: 2.5rem;
+	margin: 0.5rem;
 }
 
 .fieldset{
@@ -585,6 +669,7 @@ h4 {
 
 .textarea{
 	grid-area: textarea;
+	justify-self: start;
 }
 
 .botones{
@@ -600,14 +685,46 @@ h4 {
 	
 }
 
-.instagramContacto{
+.checkbox h2{
+	color: #ff53d4;
+    font-size: 2.5rem;
+    margin: 0.5rem;
+}
+
+.instagramContacto {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: #c89effc2;
+	height: 20rem;
+	justify-content: space-evenly;
 	font-size: 2rem;
 	color: #8093f1;
-	margin: 1rem;
-	text-align: start;
+	
+}
+
+.instagramContacto a{
+	align-items: center;
+	margin: 0rem;
+	padding: 0rem;
+	align-self: center;
+
+}
+
+.instagramContacto h5{
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	align-items: center;
+	margin: 0rem;
+	padding: 0rem;
+
 }
 
 
+.instagramContacto img{
+	width: 5rem;
+}
 
 
 .navContacto{
@@ -615,10 +732,11 @@ h4 {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	margin: 8px;
+	margin: 0px;
 	padding: 8px;
 	font-size: 1.6rem;
 	align-items: center;
+	background-color: #aaa1db;
 }
 
 .resaltarFormulario{
@@ -630,41 +748,25 @@ h4 {
 	color: #b388eb;
 }
 
-
-
-
-
-
-
-
-
-
-/* .caracteristicas{
-	display: grid;
-	grid-template-columns: 1fr, 1fr, 1fr;
-	grid-template-rows: 1fr, 1fr;
-	grid-template-areas: 
-	"parrafo1 parrafo2 parrafo3"
-	"imagen1 imagen2 imagen3"
-	;
-}
- */
-
 .fondoRedes{
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-content: flex-start;
+	justify-content: center;
+	justify-items: center;
 }
 
 #final{
 	display: flex;
-	flex-flow: row, wrap;
+	flex-direction: row;
 	justify-content:space-between;
 	padding:2rem;
 	margin-left: 1rem;
 	margin-top: 1rem;
 }
+
+.parrafoInicio{
+	align-self: flex-end;
+}
+
 
 .copyFooter{
 	background-color: #c89effc2;
@@ -672,32 +774,381 @@ h4 {
 	font-size: 1.3rem;
 }
 
-.logoContacto{
-	width: 14rem;
-	height: 14rem;
-	padding: 2rem;
+
+.gemaNails{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+/* /////////RESPONSIVE /////////// */
+
+/* /////BREAKPOINT .INDEX///// */
+
+
+/* ///BREAKPOINT TABLET/// */
+@media (max-width:768px){
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+
+.menuSuperior nav{
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+
+	.menuSuperior ul li{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+
+	.imagenBienvenida p{
+		font-size: 1.8rem;
+	}
+
+	.grid{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		height: 200rem;
+		justify-content: space-evenly;
+		padding: 2rem;
+	}
+
+	.fotoLorito{
+		height: 85%;
+	}
+
+	.cacatua{
+		margin-top: 10rem;
+		margin-bottom: 1rem;
+		padding: 5rem;
+	}
+
+	.cacatuaImage{
+		height: 120%;
+		width: auto;
+	}
+
+	.principal{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 15rem;
+	}
+
+.espaciadoLineas p{
+	max-height: 80rem;
 	
 }
 
+	.textoLorito{
+		flex-grow: 1;
+		max-height: 200px;
+	}
+}
+
+/* /////BREAKPOINT CELULAR INDEX////// */
+
+@media (max-width:500px){
+	.container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		align-content: center;
+		width: 100%;
+	}
+
+.menuSuperior nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content:center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.principal__titulo--link1{
+	display: none ;
+}
+
+	.lorito{
+		width: 80%;
+		height: auto;
+		align-content: center;
+		justify-content: center;
+	}
+
+	.fotoLorito{
+		padding: 1rem;
+	}
+
+.cacatuaImage{
+	width: 100%;
+	height: 40rem;
+	align-content: center;
+	justify-content: center;
+}
+
+.textoLorito{
+	max-height: 50%;
+}
+
+.iconos img{
+	width: 6rem;
+	height: auto;
+}
 
 
-
-
-
-
-/* BREAKPOINT PARA TABLET */
-
-/* .formato{
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
+#final{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
 
 }
 
-@media screen and (max-width:760px){
-	.tablet{
+	.colorFooter{
+		display: flex;
+		flex-direction: row;
+		justify-self: center
+	;
+	}
+}
+
+	/* ////MEDIA QUERIES CLIENTES///// */
+
+	@media (max-width: 800px){
+
+		.mainSecundarios{
+			justify-content: space-around;
+		}
+		.mainSecundarios img{
+			width: 30rem;
+		}
+	}
+
+	@media (max-width:500px) {
+		.navFlex ul{
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+		}
+		
+		.mainSecundarios{
 			display: flex;
 			flex-direction: column;
 			flex-wrap: wrap;
+			align-content: center;
+		}
+
+		.mainSecundarios img{
+			max-width: 30rem;
+		}
 	}
-} */
+
+	/* ////MEDIA QUERIES CONTACTO//// */
+
+	@media (max-width: 500px) {
+
+		.navContacto{
+			display:flex;
+			justify-content: space-around;
+		}
+
+		.navContacto nav ul li{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			align-content: center;
+			justify-content: space-around;
+		}
+
+		#formulario{
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			align-items: center;
+			padding: 1rem;
+			margin: 0rem;
+			font-size: 1.4rem;
+		}
+
+		#formulario h2{
+			font-size: 2rem;
+		}
+
+		.opciones {
+			font-size: 1.4rem;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+		}
+
+		.checkbox{
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			font-size: 1.4rem;
+			width: 60%;
+		}
+
+		.checkbox h2{
+			color: #ff53d4;
+		}
+
+		
+
+		.navFooter{
+			margin: 0rem;
+			padding: 0rem;
+		}
+
+		h4{
+			font-size: 1.4rem;
+		}
+
+		.instagramContacto {
+			font-size: 1.6rem;
+		}
+
+	}
+
+	/* ////pagina NOSOTROS//// */
+	
+	.sectionSecundarios{
+		display:flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		height: 120rem;
+		justify-content: space-evenly;
+		font-size: 2rem;
+		background-color: #dee2ff;
+		padding: 6rem;
+	}
+
+.piePaginas{
+	background-color: #c89effc2;
+	padding: 50px;
+	font-size: 1.5rem;
+}
+
+.piePaginas ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.6rem;
+
+}
+
+
+/* ///BREAKPOINT PARA CELULAR -NOSOTROS/// */
+@media (max-width:500px){
+	.sectionSecundarios{
+		height: 180rem;
+		padding: 3rem;
+	}
+}
+
+
+/* ///// pagina PREGUNTAS///// */
+
+.mainPreguntas{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: space-evenly;
+	height: 80rem;
+	margin: 0rem;
+	padding: 4rem 6rem 4rem 6rem;
+	text-align: center;
+}
+
+.mainPreguntas{
+	background-color: #c4ccff;
+	font-size: 2rem;
+}
+
+.mainPreguntas h3{
+	color: #e574bc;
+}
+
+/* ////BREAKPOINT TABLET PREGUNTAS//// */
+
+@media (max-width:768px){
+	.mainPreguntas{
+		height: 120rem;
+		margin: 0rem;
+		padding: 3rem;
+	}
+}
+
+/* ///BREAKPOINT CELULAR/// */
+
+@media (max-width:500px){
+	.mainPreguntas{
+		height: 110rem;
+		margin: 0rem;
+		padding: 3rem;
+		align-content: center;
+		text-align: center;
+		justify-content: space-evenly;
+		font-size: 1.7rem;
+
+	}
+
+	.grid{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+
+}
+
+
+/* :::::ANIMACIONES:::::: */
+
+.mainSecundarios img:hover{
+	width: 50rem;
+	border: solid #7E78D2;
+	filter: none;
+}
+
+/* ///CORRECCION DE MEDIA QUERIES BREAKPOINT TABLET CLIENTES//// */
+@media (max-width:768px){
+	.mainSecundarios img{
+		transition: none;
+		filter: none;
+	}
+	
+	.mainSecundarios img:hover{
+		display: none;
+	}
+}
+
+@media (max-width:500px){
+	.mainSecundarios img{
+		filter: none;
+	}
+}
+
+/* VELOCIDAD DE ANIMACION DEL LOGO CON ANIMATE CSS  */
+.animate__animated.animate__flipInY {
+	--animate-duration: 3s;
+}
+
+.animate__animated.animate__flipInY {
+	width: 70%;
+	height: auto;
+}
