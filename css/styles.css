@@ -1152,3 +1152,40 @@ h4 {
 	width: 70%;
 	height: auto;
 }
+
+/* GRADIENTE NUEVO PARA GALERIA */
+.mainSecundarios{
+	background: rgb(250,180,235);
+	background: linear-gradient(180deg, rgba(250,180,235,1) 59%, rgba(195,233,241,1) 100%);
+}
+
+
+@keyframes Preguntas {
+	0%{
+		opacity: 100%;
+	}
+
+
+	25%{
+		opacity: 75%;
+	}
+
+	50%{
+		opacity: 50%;
+
+	}
+	75%{
+		opacity: 25%;
+	}
+
+	100%{
+		opacity: 0%;
+	}
+}
+
+.h1Faqs {
+	animation-name: Preguntas;
+	animation-duration: 6s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+}
