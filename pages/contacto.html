@@ -14,21 +14,39 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     
+    <!-- :::BOOTSTRAP LINK::: -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
     <link rel="stylesheet"  href="../css/styles.css">
     
   </head>
   <body>
     <header class="navContacto">
-        <nav class="menuSecundario">
-          <ul>
-            <li><a href="../index.html">MENÚ PRINCIPAL</a></li>
-            <li><a href="clientes.html">CLIENTES</a></li>
-            <li><a href="preguntas.html">PREGUNTAS</a></li>
-          </ul>
-        </nav>
-      
+      <!-- ::::NUEVO NAVBAR BOOTSTRAP:::: -->
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">MENU PRINCIPAL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="clientes.html">CLIENTES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="preguntas.html">PREGUNTAS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <a href="../index.html"> <img src="../multimedia/logo_gemanuevopnggg.png" class= "animate__animated animate__flipInY"> </a>
-      <!-- NUEVO LINK "INVISIBLE" HACIA EL HOME" -->
+      <!-- LINK "INVISIBLE" HACIA EL HOME" -->
     </header>
 
     <main id="formulario">
@@ -121,7 +139,6 @@
 
       <input type="submit" value="Ingresar datos" /> Envio del formulario
     </div>
-
     </form>
 
       </main>
@@ -146,5 +163,7 @@
       <p class="copyFooter"><b>Copyright 2022 © Facundo webs</b></p>
       
     </footer>
+    <!-- JS DE BOOTSTRAP -->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>

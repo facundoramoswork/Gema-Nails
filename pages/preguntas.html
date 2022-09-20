@@ -7,25 +7,43 @@
     <title>Preguntas FAQs</title>
 
     <link rel="shorcut icon" href="../multimedia/faviconSecundario.ico">
-    
+
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <link rel="stylesheet"  href="../css/styles.css">
 
     
   </head>
   <body>
     <header id="arriba" class="menuSuperior">
-      <nav class="menuSecundario">
-        <ul>
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="nosotros.html">NOSOTROS</a></li>
-          <li><a href="clientes.html">CLIENTES</a></li>
-          <li><a href="contacto.html">CONTACTO </a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar sticky-top ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end"  id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="clientes.html">CLIENTES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <main class="mainPreguntas">
-      <h1 id="FAQs" class="h1Faqs"> Preguntas frecuentes</h1>
+    <main id="FAQs" class="mainPreguntas">
+      <h1 class="h1Faqs"> Preguntas frecuentes</h1>
 
       <h3 class="tercerTitulo"><strong>Mi turno no fue correctamente programado</strong></h3>
       <p class="parrafo">En este caso lo que deberias realizar es:</p>
@@ -37,9 +55,45 @@
       <h3 class="tercerTitulo"><strong>No encuentro la ubicacion del local</strong></h3>
       <p class="parrafo">Respuesta 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla accusamus esse, et voluptatem ut illum sapiente, porro facilis voluptate numquam cumque. Expedita eius rem molestias adipisci, cum distinctio dolor minus temporibus impedit, aliquid ducimus! Similique amet culpa suscipit repellendus magnam minus corrupti eveniet inventore, itaque, deleniti sed voluptas quasi dolore tempore voluptatem eligendi quas non quam? Excepturi, impedit quas, commodi facere iure eum hic placeat voluptcatem, aliquam labore eos corporis similique nesciunt neque rem sint?</p>
 
-      <h3 class="tercerTitulo"><strong>Pregunta/duda 3</strong></h3>
-
-      <p class="parrafo">Respuesta 3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti cum ducimus nulla labore, quae culpa quo. Velit sint beatae nobis temporibus veniam eaque saepe ullam, incidunt, soluta iste ab praesentium ipsum distinctio laboriosam doloribus pariatur nostrum, ducimus architecto magnam optio amet? Rem, aliquid ratione debitis ut repudiandae quaerat et numquam dignissimos distinctio odio ducimus itaque modi. Ratione libero, tenetur cumque nesciunt, iusto natus earum recusandae eius explicabo mollitia voluptas nisi corporis velit aliquam omnis modi impedit veritatis odio quae rem ad cupiditate. Nesciunt hic cupiditate fugiat adipisci ipsum quae similique veniam architecto assumenda velit magnam ipsa, modi maiores, possimus eum.</p>
+      <h3 class="tercerTitulo"><strong>Como se en que estado estan mis uñas y o pestañas?</strong></h3>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Naturales o sin pintar
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <strong>Al tener tus uñas o pestañas sin tratamiento alguno</strong> vamos a poder realizar un trabajo sin ningun incoveniente previo y las preparaciones requeridas van a ser menores, por tanto tambien lo será el tiempo de trabajo hasta lograr nuestros resultados!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Muy dañadas
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong>Cuando tus uñas, cejas o pestañas tienen demasiado daño.</strong> el tiempo hasta obtener resultados finales depende mucho de lo invertido en reparación, esto suele ser más sencillo si acudís a nosotros lo más breve posible. En una situación así nos dedicamos a atenderte no solo con la atención de siempre sino con un extra para dejarte radiante nuevamente.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Algo dañadas/pintadas
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <strong>Si ya tenés las uñas pintadas y tu tratamiento empieza a deteriorarse</strong> o si tus pestañas y cejas fueron tratadas con anterioridad te recomendamos que nos comentes que tratamiento les fue dado y el tiempo de cuando fueron realizados esos trabajos previos (si no lo recordas exacto una aproximación), para desarrollar de la mejor forma posible nuestro servicio y asi brindarte los mejores resultados posibles! Estos casos suelen ser los más tipicos y el tiempo en obtener resultados sigue siendo bajo, aunque no como si no hubiese pinturas o tratamiento alguno.
+            </div>
+          </div>
+        </div>
+      </div>
 
       <h3 class="tercerTitulo"><strong> Pregunta/duda 4</strong></h3>
       <p class="parrafo">Respuesta 4: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odit autem aliquid commodi asperiores temporibus debitis dignissimos minima molestias, sequi cumque et nisi reiciendis. Fugiat nisi, dignissimos ex maxime illo laboriosam explicabo! Necessitatibus molestias similique nemo distinctio. Eius, nobis autem dolores cumque blanditiis repellendus et debitis quos pariatur sunt iste nulla eveniet saepe nemo, explicabo possimus ullam quasi, quibusdam molestiae ducimus quae? Quisquam, illum! Velit magnam quidem cupiditate. Beatae, voluptas!</p>
@@ -52,10 +106,12 @@
         <li><a href="nosotros.html">NOSOTROS </a></li>
         <li><a href="clientes.html">CLIENTES</a></li>
         <li><a href="contacto.html">CONTACTO </a></li>
-        <li><a href="#FAQs">FAQs</a></li>
+        <li><a href="#FAQs">SUBIR</a></li>
       </ul>
     </nav>
 
     <footer class="copyFooter">Copyright 2022 © Facundo webs</footer>
+    <!-- JAVASCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>

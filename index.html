@@ -21,24 +21,45 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+      <!-- :::: LINK DE BOOTSTRAP :::: -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
       <link rel="stylesheet"  href="css/styles.css">
 
   </head>
 
   <body>
-    <header class="menuSuperior">
-      <nav>
-        <ul>
-          <li><a href="index.html" class="home" >HOME</a></li>
-          <li><a href="pages/nosotros.html">NOSOTROS</a></li> <!-- AQUI INSERTE UN IFRAME DE MAPS -->
-          <li><a href="pages/clientes.html" class="clientes">CLIENTES</a></li>
-          <li><a href="pages/contacto.html" class="contacto">CONTACTO </a></li>
-          <li><a href="pages/preguntas.html" class="preguntas">PREGUNTAS</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar sticky-top bg-fondo"> <!-- agregada clase bg-fondo para modificacion en CSS -->
+      <div class="container-fluid">
+        <a class="navbar-brand"> GEMA NAILS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/clientes.html">CLIENTES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/preguntas.html">PREGUNTAS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     
-    <div class="container">
+    
+    <div class="contenedor">
       <main class="principal">
       
       <div class="imagenLogo">
@@ -147,5 +168,7 @@
       <p class="colorFooter">Copyright 2022 © Facundo webs</p>
     </footer>
   </div>
+  <!--:::: SCRIPT PARA JS DE BOOTSTRAP:::: -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>

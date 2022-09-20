@@ -8,18 +8,37 @@
 
     <link rel="shorcut icon" href="../multimedia/faviconSecundario.ico">
 
+    <!--::: BOOTSTRAP LINK::: -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <link rel="stylesheet"  href="../css/styles.css">
     
   </head>
   <body id="fondoPagina1">
     <header class="menuSuperior">
-      <nav class="menuSecundario">
-        <ul>
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="clientes.html">CLIENTES</a></li>
-          <li><a href="contacto.html">CONTACTO </a></li>
-          <li><a href="preguntas.html">PREGUNTAS</a></li>
-        </ul>
+
+      <nav class="navbar navbar-expand-lg navbar sticky-top ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="clientes.html">CLIENTES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="preguntas.html">PREGUNTAS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -70,6 +89,26 @@
         iusto quibusdam repellendus laboriosam veniam magni in saepe nulla
         ducimus esse! Distinctio.
       </p>
+      
+      <div id="carouselExampleSlidesOnly" class="carousel slide"       data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../multimedia/cejas slide1.jpg"  alt="imagenCejas">
+          </div>
+          <div class="carousel-item">
+            <img src="../multimedia/pest slide1.jpg"  alt="imagenlashes">
+          </div>
+          <div class="carousel-item">
+            <img src="../multimedia/palette 21.jpg"  alt="imagenpaleta">
+          </div>
+          <div class="carousel-item">
+            <img src="../multimedia/drying nails1.jpg" alt="imagensecado">
+          </div>
+          <div class="carousel-item">
+            <img src="../multimedia/work nails 11.jpg"  alt="imagentrabajo">
+          </div>
+        </div>
+      </div>
     </section>
 
     <nav class="piePaginas">
@@ -84,5 +123,7 @@
     <footer class="copyFooter">
       <p>Copyright 2022 © Facundo webs</p>
     </footer>
+    <!-- JS DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
