@@ -1,6 +1,8 @@
 
 CHANGELOG :
 
+V1 1.3 - Se corrigen los Navbar y los footer de todas las paginas del sitio. 
+Se agregan imagenes y texto reales tematicos al sitio.
 
 v 1.2 - Se implementa el framework Bootstrap al sitio, donde se renovaron todos los menu de navegacion superiores del sitio web (nuevos menues hamburguesa para dispositivos moviles), fue agregado un carrousel a la pagina Nosotros y un acordion en la pagina de Preguntas.
  Se corrigieron algunos textos, los colores fueron repensados y cambiados para una mejor legibilidad en general.

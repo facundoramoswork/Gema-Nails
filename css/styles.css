@@ -222,11 +222,12 @@ a {
 }
 
 .imagenBienvenida p{
-	font-size: 2.4rem;
+	font-size: 3rem;
+	text-align: center;
 }
 
 .grid p{
-	font-size: 1.7rem;
+	font-size: 2rem;
 }
 
 .redesFacebook img {
@@ -262,7 +263,7 @@ a {
 .redesWhatsapp {
 	position: fixed;
 	right: 0px;
-	bottom: 40px;
+	bottom: 60px;
 }
 
 /* LAS 3 IMAGENES SUELTAS DEL INDEX */
@@ -284,6 +285,12 @@ a {
 	align-content: center;
 	align-items: center;
 
+}
+.iconos{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
 .textoIcono1{
@@ -318,12 +325,13 @@ a {
 }
 
 .iconos p{
+	text-align: center;
 	align-self: center;
 }
 
 .colorFooter {
 	color: black;
-	align-self: flex-end;
+	align-self: flex-start;
 	font-size: 1.3rem;
 }
 
@@ -344,7 +352,7 @@ a {
 }
 
 .navFooter{
-	background-color: #c89effc2;
+	background-color: #D59FF5;
 	padding: 5rem;
 	font-size: 1.5rem;
 }
@@ -355,6 +363,7 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding-left: 0rem;
 }
 
 .navFooter li{
@@ -437,6 +446,7 @@ h4 {
 .fotoLorito{
 	width: 100%;
 	height: auto;
+	padding-left: 12rem;
 }
 
 .textoLorito{
@@ -638,7 +648,7 @@ h4 {
     margin: 0.5rem;
 }
 
-.instagramContacto {
+/* .instagramContacto {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
@@ -646,10 +656,10 @@ h4 {
 	height: 20rem;
 	justify-content: space-evenly;
 	font-size: 2rem;
-	color: #8093f1;
+	color: #D59FF5;
 	
 }
-
+ */
 .instagramContacto a{
 	align-items: center;
 	margin: 0rem;
@@ -700,24 +710,29 @@ h4 {
 	display: flex;
 	justify-content: center;
 	justify-items: center;
+	align-content: center;
+	align-items: center;
+	background-color: #D59FF5;
 }
 
-#final{
+/* #final{
 	display: flex;
-	flex-direction: row;
-	justify-content:space-between;
+	flex-direction: column;
+	justify-content:center;
+	justify-items: center;
+	align-items: center;
+	align-content: center ;
 	padding:2rem;
-	margin-left: 1rem;
-	margin-top: 1rem;
-}
+	background-color: #c89effc2;
+} */
 
 .parrafoInicio{
-	align-self: flex-end;
+	align-self: center;
 }
 
 
 .copyFooter{
-	background-color: #c89effc2;
+	background-color: #D59FF5 ;
 	color: black;
 	font-size: 1.3rem;
 }
@@ -742,15 +757,20 @@ h4 {
 	}
 
 .menuSuperior nav{
-	padding-top: 0.2rem;
-	padding-bottom: 0.2rem;
+	padding-top: 0rem;
+	padding-bottom: 0rem;
 }
 
 	.menuSuperior ul li{
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		align-content: center;
+		align-content: flex-start;
+	}
+
+	.bg-fondo {
+		padding-top: 1rem;
+		padding-bottom: 0.3rem;
 	}
 
 	.imagenBienvenida p{
@@ -768,17 +788,17 @@ h4 {
 	}
 
 	.fotoLorito{
-		height: 85%;
+		height: 100%;
 	}
 
 	.cacatua{
-		margin-top: 10rem;
+		margin-top: 1rem;
 		margin-bottom: 1rem;
 		padding: 5rem;
 	}
 
 	.cacatuaImage{
-		height: 120%;
+		height: 100%;
 		width: auto;
 	}
 
@@ -806,20 +826,21 @@ h4 {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		align-items: center;
 		align-content: center;
-		width: 100%;
+		width: 100%;;
 	}
 
 .menuSuperior nav{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	align-content:center;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	align-content:flex-start;
+	padding-top: 0rem;
+	padding-bottom: 0rem;
 }
-
+.menuSuperior ul li{
+	align-content: flex-start;
+}
 .principal__titulo--link1{
 	display: none ;
 }
@@ -832,18 +853,18 @@ h4 {
 	}
 
 	.fotoLorito{
-		padding: 1rem;
+		padding-left: 5rem;
 	}
 
 .cacatuaImage{
 	width: 100%;
-	height: 40rem;
+	height:22rem;
 	align-content: center;
 	justify-content: center;
 }
 
 .textoLorito{
-	max-height: 50%;
+	max-height: 20%;
 }
 
 .iconos img{
@@ -851,14 +872,14 @@ h4 {
 	height: auto;
 }
 
-
-#final{
+/* #final{
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
 
-}
+
+} */
 
 	.colorFooter{
 		display: flex;
@@ -870,10 +891,11 @@ h4 {
 
 	/* ////MEDIA QUERIES CLIENTES///// */
 
-	@media (max-width: 800px){
-
+	@media (max-width: 800px) {
 		.mainSecundarios{
 			justify-content: space-around;
+			grid-gap: 1rem ;
+			padding: 5rem;
 		}
 		.mainSecundarios img{
 			width: 30rem;
@@ -881,17 +903,17 @@ h4 {
 
 		.texto1{
 			padding-left: 1rem;
-			font-size: 2.5rem;
+			font-size: 2rem;
 		}
 
 		.texto2{
 			padding-left: 1.4rem;
-			font-size: 2.5rem;
+			font-size: 2rem;
 		}
 
 		.texto3{
 			padding-left: 1.8rem;
-			font-size: 2.5rem;
+			font-size: 2rem;
 		}
 	}
 
@@ -971,6 +993,7 @@ h4 {
 			padding: 0rem;
 		}
 
+
 		h4{
 			font-size: 1.4rem;
 		}
@@ -996,8 +1019,8 @@ h4 {
 	}
 
 .piePaginas{
-	background-color: #c89effc2;
-	padding: 50px;
+	background-color: #D59FF5;
+	padding: 2px;
 	font-size: 1.5rem;
 }
 
@@ -1011,6 +1034,23 @@ h4 {
 
 }
 
+.piePagina__index{
+	display: flex;
+	flex-direction: column;
+}
+
+.piePagina__index ul{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.6rem;
+	padding-left: 0rem;
+}
+.piePagina__index a{
+	color: #7747fc;
+}
 
 /* ///BREAKPOINT PARA CELULAR -NOSOTROS/// */
 @media (max-width:500px){
@@ -1072,7 +1112,7 @@ h4 {
 		flex-direction: column;
 		align-content: center;
 		align-items: center;
-		height: 210rem;
+		height: 170rem;
 		padding-top: 3rem;
 		padding-bottom: 3rem;
 	}
@@ -1094,16 +1134,17 @@ h4 {
 		transition: none;
 		filter: none;
 	}
-	
 	.mainSecundarios img:hover{
-		display: none;
+		width: 30rem;
 	}
+
 }
 
 @media (max-width:500px){
 	.mainSecundarios img{
 		filter: none;
 	}
+	
 }
 
 /* VELOCIDAD DE ANIMACION DEL LOGO CON ANIMATE CSS  */
@@ -1243,4 +1284,9 @@ ul{
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(177, 81, 255, 0.781);
     --bs-accordion-active-color: #7747fc;
     --bs-accordion-active-bg: #e7f1ff;
+}
+
+
+.piePaginas ul{
+	padding-left: 0rem;
 }
