@@ -55,9 +55,10 @@
 
     <main id="formulario">
       <section class="formulario">
-        <h2>Completá los siguientes campos:</h2>
+      
         <form action="" method="" class="opciones"> 
           <!-- OPCIONES CHECKBOX -->
+          <h2>Completá los siguientes campos:</h2>
         <label for="Uñas"> <h3>Que servicio deseas que realicemos?:</h3> </label>
         
 
@@ -77,11 +78,13 @@
         <h3>Como es el estado de tus uñas y pestañas? </h3>
         <label for="estado" class="" > </label>
         
-        <input type="radio" name="estado" value="naturales">NATURALES/SIN PINTAR</input>
+        <input type="radio" name="estado" value="naturales"></input> <p>NATURALES/SIN PINTAR</p>
+
+        <input type="radio" name="estado" value="pintadas"> PINTADAS </input>
 
         <input type="radio" name="estado" value="muy deñadas"> MUY DAÑADAS  </input>
         
-        <input type="radio" name="estado" value="pintadas"> PINTADAS </input>
+
 
       
     </section>
@@ -127,24 +130,23 @@
         <legend><h3>Envianos tus comentarios:</h3></legend>
         <label for="mensaje enviado"></label>
 
-        <textarea cols="40" rows="30" name="mensaje enviado"></textarea>
-        
-        <!-- A CONTINUACION 2 BOTONES QUE NO FUNCIONAN AL MENOS POR AHORA -->
+        <textarea cols="40" rows="10" name="mensaje enviado"></textarea>
+        <div class="botones"> 
+          <input type="reset" value="Limpiar campo de texto" />
+    
+          <input type="submit" value="Ingresar datos" /> 
+        </div>
 
-        <input type="button" name="No hace nada" /> <p>Si me tocaste te informo que
+<!-- A CONTINUACION 2 BOTONES QUE NO FUNCIONAN AL MENOS POR AHORA -->
+<!-- 
+        <p>Si me tocaste te informo que
           no funciono </p>
         <input type="button" name="No hace nada" /><p>Ya, no toques
-          ese boton</p>
+          ese boton</p> -->
       </fieldset>
     </section>
 
-    <div class="botones"> 
-      <input type="reset" value="Limpiar campo de texto" />
-
-      <input type="submit" value="Ingresar datos" /> Envio del formulario
-    </div>
     </form>
-
       </main>
 
     <footer>

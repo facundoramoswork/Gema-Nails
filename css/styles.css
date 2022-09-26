@@ -231,7 +231,7 @@ a {
 }
 
 .redesFacebook img {
-	width: 6rem;
+	width: 5rem;
 }
 
 .redesFacebook {
@@ -244,7 +244,7 @@ a {
 }
 
 .redesInsta img {
-	width: 6rem;
+	width: 5rem;
 }
 
 .redesInsta {
@@ -388,11 +388,46 @@ a {
 	font-size: 2.2rem;
 }
 
-/* ESTILOS PARA PAGINA CONTACTO */
+/* =/*::::: ESTILOS PARA PAGINA CONTACTO :::::: */
 input[type="text"] {
 	color: #c89eff;
-	width: 300px;
 }
+
+input[type="email"] {
+	color: #c89eff;
+}
+
+input[type="password"] {
+	color: #c89eff;
+}
+
+select {
+	border: none;
+	outline: none;
+	color: purple;
+}
+
+option {
+	background-color: #c4ccff;
+}
+
+
+input:focus {
+	background-color: #c4ccff;
+	color: purple;
+	border: none;
+	padding: 0.6rem;
+	transition: 0.5s linear;
+}
+
+#formulario input:checked{
+	color: #7747fc;
+}
+
+input:checked {
+	color: #7747fc;
+}
+
 
 input[type="radio"] {
 	color: #b388eb;
@@ -404,6 +439,30 @@ input[type="radio"] {
 input[type="checkbox"] {
 	width: 40px;
 	margin: 10px;
+}
+
+
+#formulario input{
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+#formulario textarea {
+	color: #c89eff;
+	outline: none;
+}
+
+#formulario textarea:focus{
+	background: #c4ccff;
+	color: purple;
+}
+
+#formulario .botones input{
+	background-color:rgb(153, 153, 255);
+	color: white;
+	margin: 4px;
+	padding: 8px;
+	border-radius: 4px;
 }
 
 .formulario {
@@ -420,7 +479,9 @@ input[type="checkbox"] {
 h4 {
 	font-size: 2rem;
 	color: #ff6ad5;
+	padding: 1.5rem;
 }
+
 
 /* grilla con imagen en izq y texto der */
 .grid{
@@ -431,7 +492,6 @@ h4 {
 	"lorito textoLorito"
 	"cacatua textoCacatua"
 	;
-
 	justify-items: center;
 	align-items: center;
 }
@@ -585,17 +645,17 @@ h4 {
 #formulario{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr ;
 	grid-template-areas: 
 	"opciones ."
 	" checkbox fieldset "
-	"textarea ."
-	"botones ." ;
+	"textarea botones" ;
 	row-gap: 3rem;
 	column-gap: 3rem;
 	justify-content: center;
 	align-content: center;
 	justify-items: start;
+	place-items: center;
 
 } 
 
@@ -603,8 +663,9 @@ h4 {
 	grid-area: opciones;
 	display: grid;
 	grid-column: start;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	justify-self: start;
+	margin-left: -170px;
 }
 
 .formulario h2{
@@ -618,14 +679,16 @@ h4 {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
+	place-content: center;
+	align-items: stretch;
+	padding-left: 2rem;
 
 }
 
 .textarea{
 	grid-area: textarea;
-	justify-self: start;
+	justify-self: center;
+	place-items: center;
 }
 
 .botones{
@@ -637,7 +700,10 @@ h4 {
 	grid-area: checkbox;
 	display: flex;
 	flex-direction: column ;
-	font-size: 2rem;
+	justify-content: start;
+	align-content: flex-start;
+	justify-items:start;
+	font-size: 1.8rem;
 	
 }
 
@@ -938,6 +1004,25 @@ h4 {
 
 	/* ////MEDIA QUERIES CONTACTO//// */
 
+
+	@media (max-width:768px) {
+		#formulario {
+			grid-template-areas:
+			"opciones ."
+			" checkbox fieldset "
+			"textarea textarea"
+		}
+
+		fieldset {
+			display: grid;
+			justify-items: stretch;
+			align-items: stretch;
+		}
+		
+		.opciones {
+			margin-left: 0px;
+		}
+	}
 	@media (max-width: 500px) {
 
 		.navContacto{
@@ -972,6 +1057,7 @@ h4 {
 			display: flex;
 			flex-direction: column;
 			align-content: center;
+			margin-left: 0px;
 		}
 
 		.checkbox{
@@ -982,11 +1068,29 @@ h4 {
 			width: 60%;
 		}
 
+		fieldset {
+			display: flex;
+			flex-direction: column;
+			margin-left: 0rem;
+		}
+
 		.checkbox h2{
 			color: #ff53d4;
 		}
 
+		.formulario h3 {
+			text-align: center;
+		}
 		
+/*/// Correcion campo de texto ///*/
+		fieldset {
+			place-items: center	;
+			padding-left: 0rem;
+		}
+
+		.fieldset{
+			padding: 1rem;
+		}
 
 		.navFooter{
 			margin: 0rem;
@@ -1055,8 +1159,9 @@ h4 {
 /* ///BREAKPOINT PARA CELULAR -NOSOTROS/// */
 @media (max-width:500px){
 	.sectionSecundarios{
-		height: 220rem;
+		height: 230rem;
 		padding: 3rem;
+		font-size: 1.7rem;
 	}
 }
 
@@ -1084,6 +1189,10 @@ h4 {
 	color: #e574bc;
 }
 
+.mainPreguntas strong {
+	font-size: 2rem;
+}
+
 /* ////BREAKPOINT TABLET PREGUNTAS//// */
 
 @media (max-width:768px){
@@ -1092,7 +1201,12 @@ h4 {
 		margin: 0rem;
 		padding: 3rem;
 	}
+
+	.mainPreguntas strong {
+		font-size: 2rem;
+	}
 }
+
 
 /* ///BREAKPOINT CELULAR/// */
 
@@ -1107,6 +1221,9 @@ h4 {
 		font-size: 1.7rem;
 	}
 
+	.mainPreguntas strong {
+		font-size: 1.7rem;
+	}
 	.grid{
 		display: flex;
 		flex-direction: column;
