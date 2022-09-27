@@ -18,7 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
 
-    <link rel="stylesheet"  href="../css/styles.css">
+    <link rel="stylesheet"  href="../css/main.css">
     
   </head>
   <body>
@@ -61,15 +61,15 @@
           <h2>Completá los siguientes campos:</h2>
         <label for="Uñas"> <h3>Que servicio deseas que realicemos?:</h3> </label>
         
-
+          <div class="cb1">
         <input type="checkbox" value="1" name="Uñas" />SOLO UÑAS
-        
-
+        </div>
+        <div class="cb2"> 
         <input type="checkbox" value="2" name="Uñas" />PESTAÑAS
-        
-
+        </div>
+        <div class="cb3" >
         <input type="checkbox" value="3" name="Uñas" />UÑAS Y PESTAÑAS
-
+        </div>
     </section>
             <!-- RADIO BUTTONS -->
     <section class="checkbox">
@@ -77,13 +77,15 @@
 
         <h3>Como es el estado de tus uñas y pestañas? </h3>
         <label for="estado" class="" > </label>
-        
-        <input type="radio" name="estado" value="naturales"></input> <p>NATURALES/SIN PINTAR</p>
-
-        <input type="radio" name="estado" value="pintadas"> PINTADAS </input>
-
-        <input type="radio" name="estado" value="muy deñadas"> MUY DAÑADAS  </input>
-        
+        <div class="rd1">
+        <input type="radio" name="estado" value="naturales"></input> <span>NATURALES/SIN PINTAR</span>
+        </div>
+        <div class="rd2">
+        <input type="radio" name="estado" value="pintadas"> <span>PINTADAS </span>  </input>
+        </div>
+        <div class="rd3">
+        <input type="radio" name="estado" value="muy deñadas"> <span>MUY DAÑADAS </span> </input>
+        </div>
 
 
       
@@ -116,7 +118,6 @@
             <option value="Entre rios">Entre rios</option>
             <option value="Parana">Parana</option>
             <option value="Reconquista">Reconquista</option>
-            <option value="Venado Tuerto">Venado Tuerto</option>
             <option value="Alrededores">Alrededores</option>
             
             

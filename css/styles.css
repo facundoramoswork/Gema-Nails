@@ -110,7 +110,7 @@ body {
 
 .menuSuperior nav {
 	background-color: #c89effc2;
-	background-image: url(../multimedia/mano\ descendiendo1.jpg);
+	background-image: url(../multimedia/mano.descendiendo1.jpg);
 	background-repeat: no-repeat;
 	background-size: auto;
 	display: flex;
@@ -707,6 +707,33 @@ h4 {
 	
 }
 
+/* :::Ajustes checkbox y radio buttons ::::*/
+.cb1 {
+	display: flex;
+	padding: 0.3rem;
+}
+
+.cb2{
+	padding: 0.3rem;
+}
+
+.cb3{
+	padding: 0.3rem;
+}
+
+.rd1 {
+	display: flex;
+	flex-direction: row;
+	padding: 0.3rem;
+}
+
+.rd2{
+	padding: 0.3rem;
+}
+
+.rd3{
+	padding: 0.3rem;
+}
 
 .checkbox h2{
 	color: #ff53d4;
@@ -714,18 +741,6 @@ h4 {
     margin: 0.5rem;
 }
 
-/* .instagramContacto {
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	background-color: #c89effc2;
-	height: 20rem;
-	justify-content: space-evenly;
-	font-size: 2rem;
-	color: #D59FF5;
-	
-}
- */
 .instagramContacto a{
 	align-items: center;
 	margin: 0rem;
@@ -751,7 +766,7 @@ h4 {
 }
 
 
-.navContacto{
+/* .navContacto{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -762,7 +777,7 @@ h4 {
 	align-items: center;
 	background-color: #D5B5FF;
 }
-
+ */
 .resaltarFormulario{
 	font-size: 4rem;
 	color: #8093f1;
@@ -780,17 +795,6 @@ h4 {
 	align-items: center;
 	background-color: #D59FF5;
 }
-
-/* #final{
-	display: flex;
-	flex-direction: column;
-	justify-content:center;
-	justify-items: center;
-	align-items: center;
-	align-content: center ;
-	padding:2rem;
-	background-color: #c89effc2;
-} */
 
 .parrafoInicio{
 	align-self: center;
@@ -1122,7 +1126,7 @@ h4 {
 		padding: 6rem;
 	}
 
-.piePaginas{
+.piePaginas{ /* USAR MIXIN SIN PARAMETROS P/ FOOTER */
 	background-color: #D59FF5;
 	padding: 2px;
 	font-size: 1.5rem;
@@ -1314,7 +1318,7 @@ h4 {
 
 .bg-fondo{
 	background-color: #c89effc2;
-	background-image: url(../multimedia/mano\ descendiendo1.jpg);
+	background-image: url(../multimedia/mano.descendiendo1.jpg);
 	background-repeat: no-repeat;
 	background-size: auto;
 	margin: 0px;

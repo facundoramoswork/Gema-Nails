@@ -1,0 +1,16 @@
+@mixin pie{
+    background-color: #D59FF5;
+	padding: 2px;
+	font-size: 1.5rem;
+}
+
+@mixin footer-ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+    
+    }
+

@@ -1,0 +1,288 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	
+}
+
+.bg-fondo{
+	background-color: $Navbar;
+	background-image: url(../multimedia/mano.descendiendo1.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	margin: 0px;
+	padding-top: 4rem;
+	padding-left: 0.6rem;
+	padding-right: 0.6rem;
+	padding-bottom: 4rem;
+}
+/* MODIFICACION ESTILO FUENTE DE NAVBAR BTS */
+.nav-link{
+	font-family: "Lato", sans-serif;
+	font-size: 2rem;
+	font-weight: normal;
+	color: #551A8B;
+}
+
+.navbar-nav .nav-link.active{
+	color: #7E78D2;
+}
+
+.navbar-brand{
+	display: none;
+}
+/* MODIFICACION DE PADDING ELEMENTOS DE NAVBAR BTS */
+.navbar{
+	--bs-navbar-nav-link-padding-x: 0.8rem;
+}
+.navbar-nav {
+    --bs-nav-link-padding-x: 0.8rem;
+    --bs-nav-link-padding-y: 0.8rem;
+}
+
+#formulario{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr ;
+	grid-template-areas: 
+	"opciones ."
+	" checkbox fieldset "
+	"textarea botones" ;
+	row-gap: 3rem;
+	column-gap: 3rem;
+	justify-content: center;
+	align-content: center;
+	justify-items: start;
+	place-items: center;
+    background-color: #fcadefda;
+    font-size: 1.7rem;
+    text-align: left;
+    padding: 2rem;
+    h3{
+	color: #b388eb;
+}
+} 
+
+.opciones{
+	grid-area: opciones;
+	display: grid;
+	grid-column: start;
+	font-size: 1.8rem;
+	justify-self: start;
+	margin-left: -170px;
+}
+
+.formulario h2{
+	color: #ff53d4;
+	font-size: 2.5rem;
+	margin: 0.5rem;
+}
+
+.fieldset{
+	grid-area: fieldset;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	place-content: center;
+	align-items: stretch;
+	padding-left: 2rem;
+
+}
+
+.textarea{
+	grid-area: textarea;
+	justify-self: center;
+	place-items: center;
+}
+
+.botones{
+	grid-area: botones;
+}
+
+.checkbox{
+	grid-area: checkbox;
+	display: flex;
+	flex-direction: column ;
+	justify-content: start;
+	align-content: flex-start;
+	justify-items:start;
+	font-size: 1.8rem;
+    h2{
+        color: #ff53d4;
+        font-size: 2.5rem;
+        margin: 0.5rem;
+    }
+	
+}
+
+/* :::Ajustes checkbox y radio buttons ::::*/
+.cb1 {
+	display: flex;
+	padding: 0.3rem;
+}
+
+.cb2{
+	padding: 0.3rem;
+}
+
+.cb3{
+	padding: 0.3rem;
+}
+
+.rd1 {
+	display: flex;
+	flex-direction: row;
+	padding: 0.3rem;
+}
+
+.rd2{
+	padding: 0.3rem;
+}
+
+.rd3{
+	padding: 0.3rem;
+}
+
+.fondoRedes{
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+	background-color: #D59FF5;
+}
+
+.redesFacebook {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	padding: 10px;
+    img {
+        width: 5rem;
+    }
+    
+}
+
+.redesInsta {
+	display: block;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	padding: 10px;
+    img {
+        width: 5rem;
+    }
+    
+}
+
+.piePaginas{
+    @include pie;
+}
+
+.piePaginas ul{
+    @include footer-ul;
+    padding-left: 0rem;
+    a{
+        color: #7747fc;
+    }
+}
+
+.copyFooter{
+	background-color:$colorFooter ;
+	color: black;
+	font-size: 1.3rem;
+}
+
+p{
+	margin-bottom: 0rem;
+}
+
+
+a {
+	color: #7747fc;
+    text-decoration: none;
+}
+
+/* =/*::::: ESTILOS PARA PAGINA CONTACTO :::::: */
+input[type="text"] {
+	color: #c89eff;
+}
+
+input[type="email"] {
+	color: #c89eff;
+}
+
+input[type="password"] {
+	color: #c89eff;
+}
+
+input[type="radio"] {
+	color: #b388eb;
+	width: 40px;
+	margin: 10px;
+	padding: 10px;
+}
+
+input[type="checkbox"] {
+	width: 40px;
+	margin: 10px;
+}
+
+select {
+	border: none;
+	outline: none;
+	color: purple;
+}
+
+option {
+	background-color: #c4ccff;
+}
+
+input:focus {
+	background-color: #c4ccff;
+	color: purple;
+	border: none;
+	padding: 0.6rem;
+	transition: 0.5s linear;
+}
+
+input:checked {
+	color: #7747fc;
+}
+
+#formulario input{
+	border: none;
+	outline: none;
+	cursor: pointer;
+    &:checked{
+        color: #7747fc;
+    }
+    
+}
+
+#formulario textarea {
+	color: #c89eff;
+	outline: none;
+    &:focus{
+        background: #c4ccff;
+        color: purple;
+    }
+}
+
+#formulario .botones input{
+	background-color:rgb(153, 153, 255);
+	color: white;
+	margin: 4px;
+	padding: 8px;
+	border-radius: 4px;
+}
