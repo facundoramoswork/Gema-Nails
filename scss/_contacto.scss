@@ -76,9 +76,12 @@ body {
 	grid-column: start;
 	font-size: 1.8rem;
 	justify-self: start;
-	margin-left: -170px;
+	margin-left: -90px;
 }
-
+.formulario h1{
+	color: #644fdd;
+	font-size: 3rem;
+}
 .formulario h2{
 	color: #ff53d4;
 	font-size: 2.5rem;
@@ -226,16 +229,17 @@ input[type="password"] {
 	color: #c89eff;
 }
 
-input[type="radio"] {
-	color: #b388eb;
-	width: 40px;
-	margin: 10px;
-	padding: 10px;
-}
 
 input[type="checkbox"] {
 	width: 40px;
 	margin: 10px;
+}
+
+/* ///extend de la clase de arriba/// */
+input[type="radio"] {
+	@extend input[type="checkbox"] ;
+	padding: 10px;
+	color: #b388eb; /* se agrega padding distinto y color de la clase original  */
 }
 
 select {

@@ -88,7 +88,7 @@ body {
 }
 
 .principal__titulo--bienvenida {
-	color: #64dbf8;
+	color: #ffe6ff;
 	text-align: center;
 	font-size: 2rem;
 }
@@ -128,7 +128,7 @@ body {
 	color: aquamarine;
 	list-style-type: square;
 	font-size: 2rem;
-	font-weight: normal;
+	font-weight: 800;
 }
 .menuSuperior ul li {
 	display: inline-block;
@@ -173,6 +173,17 @@ a {
 
 .espaciadoLineas {
 	line-height: 1.4;
+}
+
+.espaciadoLineas span{
+	font-weight: 700;
+	color: #7747fc;
+}
+
+.parrafoPrincipal{
+	line-height: 1.4;
+	font-weight: 800;
+
 }
 
 .imagenLogo {
@@ -335,10 +346,21 @@ a {
 	font-size: 1.3rem;
 }
 
+.encabezado{
+	background-color: #c89effc2;
+	color: #644fdd;
+	margin: 0px;
+	padding: 0.5rem;
+	text-align: center;
+}
+.encabezado h1{
+	font-size: 3rem;
+}
 /* CSS Para html de preguntas */
 
 .h1Faqs {
 	color: #7747fc;
+	font-size: 3rem;
 	text-align: start;
 }
 
@@ -608,16 +630,19 @@ h4 {
 .texto1{
 	grid-area: texto1;
 	font-size: 3rem;
+	justify-self: center;
 }
 
 .texto2{
 	grid-area: texto2;
 	font-size: 3rem;
+	justify-self: center;
 }
 
 .texto3{
 	grid-area: texto3;
 	font-size: 3rem;
+	justify-self: center;
 }
 
 
@@ -665,7 +690,7 @@ h4 {
 	grid-column: start;
 	font-size: 1.8rem;
 	justify-self: start;
-	margin-left: -170px;
+	margin-left: -90px;
 }
 
 .formulario h2{
@@ -1125,6 +1150,11 @@ h4 {
 		background-color: #dee2ff;
 		padding: 6rem;
 	}
+	.sectionSecundarios h1{
+		color: #644fdd;
+		font-size: 3rem;
+		padding-bottom: 2rem;
+	}
 
 .piePaginas{ /* USAR MIXIN SIN PARAMETROS P/ FOOTER */
 	background-color: #D59FF5;
@@ -1196,7 +1226,6 @@ h4 {
 .mainPreguntas strong {
 	font-size: 2rem;
 }
-
 /* ////BREAKPOINT TABLET PREGUNTAS//// */
 
 @media (max-width:768px){
@@ -1239,7 +1268,6 @@ h4 {
 	}
 
 }
-
 
 /* :::::ANIMACIONES:::::: */
 

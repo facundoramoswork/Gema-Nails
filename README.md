@@ -1,7 +1,30 @@
 
 CHANGELOG :
 
-V1 1.3 - Se corrigen los Navbar y los footer de todas las paginas del sitio. 
+V 1.4 - Añadidos h1 como encabezado a todas las paginas. Se utilizaron meta keywords y meta description para todas las paginas del sitio. Se resaltaron algunos textos.
+
+       Nuevas caracteristicas SEO del sitio:
+
+       - INDEX : se agrego un meta keywords con las palabras claves relacionadas a la pagina como lo son : uñas, pestañas, cejas, beauty, nails, eyelashes, eyebrows, belleza, estetica. Algunas en ingles(EN)y otras en español(ES) para un mejor posicionamiento.
+                Tambien se añadió la etiqueta meta description donde se resumio brevemente el contenido que el usuario encontrara en la pagina index usando el siguiente texto : "Bienvenidos a la pagina de Gema Nails, si estabas buscando cambiar o renovar tu look de uñas, pestañas o cejas llegaste al sitio indicado"
+                En el encabezado no se realizaron cambios, por lo tanto se sigue utilizando el ya existente Gema Nails debajo del logo.
+        -CLIENTES: se incluyeron las siguientes keywords : imagenes, galeria, pictures, gallery, artwork, trabajos, clientes, fotos, resultados. Utilizando la misma metodologia que en la pagina index.html las palabras claves son en idioma ingles y español.
+                En la descripcion de esta pagina que representa la galeria del sitio se escribio: "Mira nuestros trabajos realizados al detalle en nuestra galeria de fotos de clientes y conoce nuestro local por dentro"
+                Se añadió el encabezado Galeria de Imagenes utilizando una etiqueta <h1> inmediato al navbar.
+                
+        -CONTACTO: Nuevos keywords : contacto, contact, comunicate, redes, whatsapp, social, consultas, turnos .
+                Como descripción a la importante pagina de contacto utilicé el siguiente texto: "Ponete en contacto con nosotros! Saca tu turno para renovar tu look en Gema Nails, o cancela uno existente desde aquí"
+                Se añade un encabezado "Ponete en contacto con nosotros"
+
+        -NOSOTROS: Se busca dar posicionamiento con los siguientes keywords: sobre, nosotros, quienes, somos, historia, objetivo, ideales.
+                Para la descripcion de la pagina se utiliza el siguiente contenido: "Descubri quien se encuentra detras de este emprendimiento de negocio llamado Gema Nails, nuestros ideales, historia y objetivos"
+                Con el nuevo encabezado "Conocenos un poco más" se intenta dar mejor funcionalidad a la accesibilidad de la pagina.
+                
+        -PREGUNTAS: Se hace uso de las siguientes palabras clave: dudas, preguntas, frecuentes, faq, respuestas, answers, questions. Siempre utilizando algunas palabras en ingles y otras en español para mejorar el alcance de la pagina en su posicionamiento.
+                Nueva description de la pagina con el siguiente texto, utilizando como en todas las demás los menores caracteres posibles para solo dar informacion util: "Preguntas frecuentes de Gema Nails, aqui responderemos las dudas mas frecuentes de nuestros usuarios de la forma mas amigable".
+                El encabezado se mantuvo tal cual estaba previamente, incluida su animación.
+
+V 1.3 - Se corrigen los Navbar y los footer de todas las paginas del sitio. 
 Se agregan imagenes y texto reales tematicos al sitio.
 
 v 1.2 - Se implementa el framework Bootstrap al sitio, donde se renovaron todos los menu de navegacion superiores del sitio web (nuevos menues hamburguesa para dispositivos moviles), fue agregado un carrousel a la pagina Nosotros y un acordion en la pagina de Preguntas.
