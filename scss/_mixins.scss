@@ -14,3 +14,8 @@
     
     }
 
+@mixin tituloPreguntas ($color, $alineacion, $rem) {
+    color: $color;
+	text-align: $alineacion;
+	font-size: $rem;
+}

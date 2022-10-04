@@ -324,6 +324,7 @@ body {
   .mainPreguntas strong {
     font-size: 2rem; }
 
+/* Nuevo mixin */
 .h1Faqs {
   color: #7747fc;
   text-align: start;

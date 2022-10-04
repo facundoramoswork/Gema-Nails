@@ -90,11 +90,11 @@ body {
     }
 }
 
-.h1Faqs {
-	color: #7747fc;
-	text-align: start;
-	font-size: 3rem;
+/* Nuevo mixin */
+.h1Faqs { 
+	@include tituloPreguntas ( #7747fc, start, 3rem) ;
 }
+
 
 .mainSecundarios h3{
 	color: #8093f1;
