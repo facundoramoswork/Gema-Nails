@@ -1,3 +1,216 @@
+/* ///BREAKPOINT TABLET/// */
+@media (max-width:768px){
+	.contenedor{
+		display: flex;
+		flex-direction: column;
+	}
+    .animate__animated.animate__flipInY{
+        display: none;
+    }
+.menuSuperior nav{
+	padding-top: 0rem;
+	padding-bottom: 0rem;
+}
+
+	.menuSuperior ul li{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: flex-start;
+	}
+
+	.bg-fondo {
+		padding-top: 1rem;
+		padding-bottom: 0.3rem;
+	}
+
+	.imagenBienvenida p{
+		font-size: 1.8rem;
+	}
+
+	.grid{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		height: 200rem;
+		justify-content: space-evenly;
+		padding: 2rem;
+	}
+
+	.sectionImage1{
+		height: 100%;
+	}
+
+	.botellitas{
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding: 5rem;
+	}
+
+	.sectionImage2{
+		height: 100%;
+		width: auto;
+	}
+
+	.principal{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 15rem;
+	}
+
+.espaciadoLineas p{
+	max-height: 80rem;
+	
+}
+
+	.textoEyelash{
+		flex-grow: 1;
+		max-height: 200px;
+	}
+}
+
+/* /////BREAKPOINT CELULAR INDEX////// */
+
+@media (max-width:500px){
+	.contenedor {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: center;
+		width: 100%;;
+	}
+
+    .animate__animated.animate__flipInY{
+        display: none;
+    }
+
+.menuSuperior nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content:flex-start;
+	padding-top: 0rem;
+	padding-bottom: 0rem;
+}
+.menuSuperior ul li{
+	align-content: flex-start;
+}
+.principal__titulo--link1{
+	display: none ;
+}
+
+	.eyelash{
+		width: 80%;
+		height: auto;
+		align-content: center;
+		justify-content: center;
+	}
+
+	.sectionImage1{
+		padding-left: 5rem;
+	}
+
+.sectionImage2{
+	width: 100%;
+	height:22rem;
+	align-content: center;
+	justify-content: center;
+}
+
+.textoEyelash{
+	max-height: 20%;
+}
+
+.iconos img{
+	width: 6rem;
+	height: auto;
+}
+
+	.colorFooter{
+		display: flex;
+		flex-direction: row;
+		justify-self: center;
+	}
+}
+@media (max-width:380px){
+    .principal__titulo{
+        font-size: 5.5rem;
+        margin-top: 3rem;
+    }
+    .iconos strong{
+        font-size: 1.3rem;
+    }
+    .botellitas {
+        margin-top: 6rem;
+    }
+}
+/* ////Clientes//// */
+@media (max-width: 768px) {
+    .animate__animated.animate__flipInY{
+        display: none;
+    }
+    .mainSecundarios{
+        grid-gap: 1rem ;
+        padding: 1.5rem;
+        img{
+            width: 30rem;
+        }
+    }
+
+    .texto1{
+        padding-left: 1rem;
+        font-size: 2rem;
+    }
+
+    .texto2{
+        padding-left: 1.4rem;
+        font-size: 2rem;
+    }
+
+    .texto3{
+        padding-left: 1.8rem;
+        font-size: 2rem;
+    }
+}
+@media (max-width:768px){
+	.mainSecundarios img{
+		transition: none;
+		filter: none;
+	}
+	.mainSecundarios img:hover{
+		width: 30rem;
+	}
+}
+
+@media (max-width:500px) {
+    .navFlex ul{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .animate__animated.animate__flipInY{
+        display: none;
+    }
+    .mainSecundarios{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        img{
+            max-width: 30rem;
+            filter: none;
+        }
+    }
+
+}
+@media (max-width:380px) {
+    .encabezado img{
+        display: none;
+    }
+}
+
+
 ///////Contacto/////////
 @media (max-width:768px) {
     .menuSuperior nav{
@@ -12,6 +225,9 @@
             align-content: flex-start;
         }
     
+        .animate__animated.animate__flipInY{
+            display: none;
+        }
     #formulario {
         grid-template-areas:
         "opciones ."
@@ -42,6 +258,7 @@
     }
 }
 @media (max-width: 500px) {
+
     .menuSuperior nav{
         display: flex;
         flex-direction: column;
@@ -52,6 +269,9 @@
     }
     .menuSuperior ul li{
         align-content: flex-start;
+    }
+    .animate__animated.animate__flipInY{
+        display: none;
     }
     .navContacto{
         display:flex;
@@ -86,6 +306,10 @@
         flex-direction: column;
         align-content: center;
         margin-left: 95px;
+    }
+
+    .animacion img{
+        display: none;
     }
 
     .checkbox{
@@ -134,8 +358,82 @@
     }
 }
 
-///// preguntas /////
+@media (max-width:380px){
+    .opciones{
+        margin-left: 65px;
+    }
+    .botones{
+        padding-top: 2rem;
+        padding-bottom:2rem;
+    }
+    input[type="radio"]{
+        width: 2rem;
+    }
+}
+///// nosotros /////
 
+@media (max-width:768px){
+    .animate__animated.animate__flipInY{
+        display: none;
+    }
+    .sectionSecundarios {
+        height: 240rem;
+        padding: 6rem;
+        p{
+            text-align: start;
+        }
+    }
+}
+
+@media  (max-width: 480px){
+    .animate__animated.animate__flipInY{
+        display: none;
+    }
+.sectionSecundarios{
+    height: 230rem;
+    padding: 3rem;
+    font-size: 1.7rem;
+    margin: 0rem;
+    img{
+        max-width: 478px;
+    }
+}
+}
+
+@media (max-width:500px){
+    .animate__animated.animate__flipInY{
+        display: none;
+    }
+	.sectionSecundarios{
+		height: 230rem;
+		padding: 3rem;
+		font-size: 1.7rem;
+        img{
+            max-width: 500px;
+        }
+	}
+}
+
+@media (max-width:380px){
+    .sectionSecundarios{
+        height: fit-content;
+        width: auto;
+        padding: 4rem;
+        img{
+            max-width: 378px;
+        }
+        p{
+            padding-top: 1.4rem;
+            padding-bottom: 1.4rem;
+        }
+    }
+    .iframe{
+        width: 36rem;
+    }
+
+}
+
+///// preguntas /////
 
 @media (max-width:768px){
     .menuSuperior nav{
@@ -149,7 +447,9 @@
             flex-wrap: wrap;
             align-content: flex-start;
         }
-    
+        .animate__animated.animate__flipInY{
+            display: none;
+        }
 	.mainPreguntas{
 		height: 150rem;
 		margin: 0rem;
@@ -178,7 +478,9 @@
     .menuSuperior ul li{
         align-content: flex-start;
     }
-
+    .animate__animated.animate__flipInY{
+        display: none;
+    }
 	.mainPreguntas{
 		height: 170rem;
 		margin: 0rem;
@@ -202,4 +504,10 @@
 		padding-bottom: 3rem;
 	}
 
+}
+
+@media (max-width:380px){
+    .mainPreguntas {
+        height: fit-content;
+    }
 }

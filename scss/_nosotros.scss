@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	
+}
+
+.menuSuperior {
+	z-index: 1000;
+    position: sticky;
+	top: 0%;
+    nav {
+        background-color: #c89effc2;
+        background-image: url(../multimedia/mano.descendiendo1.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:  flex-end;
+        margin: 0px;
+        padding-top: 4rem;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+        padding-bottom: 4rem;
+        text-align: right;
+        a{
+            transition: all 0.2s ease-in-out;
+        }
+        a:hover {
+                color: #ffffff;
+                transform: scale(1.1);
+        }
+    }
+}
+.bg-fondo{
+	background-color: #c89effc2;
+	background-image: url(../multimedia/mano.descendiendo1.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	margin: 0px;
+	padding-top: 4rem;
+	padding-left: 0.6rem;
+	padding-right: 0.6rem;
+	padding-bottom: 4rem;
+    a{
+		transition: all 0.2s ease-in-out;
+	}
+	a:hover {
+			color: #ffffff;
+			transform: scale(1.1);
+	}
+}
+
+.animate__animated.animate__flipInY{
+	width: 8rem ;
+	justify-self: flex-start;
+	justify-items: flex-start;
+	margin-left: 8rem;
+}
+.animate__animated.animate__flipInY{
+	--animate-duration: 2s;
+}
+
+.sectionSecundarios{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 200rem;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    background-color: #dee2ff;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    h1{
+        color: #644fdd;
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    p{
+        text-align: center;
+    }
+    span{
+        font-weight: 700;
+    }
+}
+.iframe{
+    width: 1000px;
+}
+
+
+.subtituloSecundarios {
+	font-weight: 700;
+	color: #8093f1;
+	font-size: 2.2rem;
+}
+.copyFooter{
+    background-color: #D59FF5 ;
+    color: black;
+    font-size: 1.3rem;
+}
+.fondoRedes{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-color: #D59FF5;
+}
+
+
+.redesFacebook {
+display: inline-block;
+margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 20px;
+margin-left: 10px;
+padding: 10px;
+img {
+    width: 5rem;
+}
+}
+.redesInsta {
+display: block;
+margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 20px;
+margin-left: 10px;
+padding: 10px;
+img {
+    width: 5rem;
+}
+}
+/* uso de mixin */
+.piePaginas{
+@include pie;
+}
+
+.piePaginas ul{
+@include footer-ul;
+padding-left: 0rem;
+a{
+    color: #7747fc;
+}
+}

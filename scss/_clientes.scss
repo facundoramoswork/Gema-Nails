@@ -1,0 +1,251 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	
+}
+
+.menuSuperior {
+	z-index: 1000;
+    position: sticky;
+	top: 0%;
+    nav {
+        background-color: #c89effc2;
+        background-image: url(../multimedia/mano.descendiendo1.jpg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin: 0px;
+        padding-top: 4rem;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+        padding-bottom: 4rem;
+        text-align: right;
+    }
+}
+.bg-fondo{
+	background-color: #c89effc2;
+	background-image: url(../multimedia/mano.descendiendo1.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	margin: 0px;
+	padding-top: 4rem;
+	padding-left: 0.6rem;
+	padding-right: 0.6rem;
+	padding-bottom: 4rem;
+    a{
+		transition: all 0.2s ease-in-out;
+	}
+	a:hover {
+			color: #ffffff;
+			transform: scale(1.1);
+	}
+}
+
+.animate__animated.animate__flipInY{
+	width: 8rem ;
+	justify-self: flex-start;
+	justify-items: flex-start;
+	margin-left: 8rem;
+}
+.animate__animated.animate__flipInY{
+	--animate-duration: 2s;
+}
+
+/* MODIFICACION ESTILO FUENTE DE NAVBAR BTS */
+.nav-link{
+	font-family: "Lato", sans-serif;
+	font-size: 2rem;
+	font-weight: normal;
+	color: #551A8B;
+}
+
+.navbar-nav .nav-link.active{
+	color: #7E78D2;
+}
+
+.navbar-brand{
+	display: none;
+}
+
+/* MODIFICACION DE PADDING ELEMENTOS DE NAVBAR BTS */
+.navbar{
+	--bs-navbar-nav-link-padding-x: 0.8rem;
+}
+.navbar-nav {
+    --bs-nav-link-padding-x: 0.8rem;
+    --bs-nav-link-padding-y: 0.8rem;
+}
+
+.encabezado{
+	background-color: #c89effc2;
+	color: #644fdd;
+    display: flex;
+    justify-content: space-around;
+	margin: 0px;
+	padding: 1rem;
+	text-align: center;
+    h1{
+        font-size: 3rem;
+    }
+    img{
+        width: 6rem;
+        height: auto;
+    }
+}
+
+/* GRADIENTE FONDO DE GALERIA */
+
+	/* /////GRILLA DE GALERIA /////*/
+    .mainSecundarios{
+        background: rgb(255,168,214);
+        background: linear-gradient(180deg, rgba(255,168,214,1) 2%, rgba(195,233,241,1) 42%, rgba(213,159,245,1) 99%); 
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+        "texto1 imagen1 imagen2"
+        " animacion imagen3 imagen4"
+        " . imagen5 imagen6"
+        "texto2 imagen7 imagen8"
+        "texto3 imagen9 imagen10"
+        ;
+        
+        grid-gap: 3rem;
+        justify-content: end;
+        justify-items: end;
+        align-items: center;
+        margin: 0rem;
+        padding: 6rem;
+        img{
+            width: 40rem;
+            height: auto;
+            margin: 0rem;
+            transition: width 2s;
+            filter: grayscale(100%);
+        }
+        img:hover{
+            width: 43rem;
+            border: solid #7E78D2;
+            filter: none;
+        }
+        
+    }
+    .galeria1{
+        grid-area: imagen1;
+        
+    }
+    
+    .galeria2{
+        grid-area: imagen2;
+    }
+    
+    .galeria3{
+        grid-area: imagen3;
+    }
+    
+    .galeria4{
+        grid-area: imagen4;
+    }
+    
+    .galeria5{
+        grid-area: imagen5;
+    }
+    
+    .galeria6{
+        grid-area: imagen6;
+    }
+    
+    .galeria7{
+        grid-area: imagen7;
+    }
+    
+    .galeria8{
+        grid-area: imagen8; 
+    }
+    .galeria9{
+        grid-area: imagen9;
+    }
+    
+    .galeria10{
+        grid-area: imagen10;
+    }
+    
+    .texto1{
+        grid-area: texto1;
+        font-size: 3rem;
+        justify-self: center;
+    }
+    
+    .texto2{
+        grid-area: texto2;
+        font-size: 3rem;
+        justify-self: center;
+    }
+    
+    .texto3{
+        grid-area: texto3;
+        font-size: 3rem;
+        justify-self: center;
+    }
+
+
+    /* FOOTER DE LA PAGINA */
+    .copyFooter{
+        background-color: #D59FF5 ;
+        color: black;
+        font-size: 1.3rem;
+    }
+    .fondoRedes{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        background-color: #D59FF5;
+    }
+    
+
+.redesFacebook {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	padding: 10px;
+    img {
+        width: 5rem;
+    }
+}
+.redesInsta {
+	display: block;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	padding: 10px;
+    img {
+        width: 5rem;
+    }
+}
+/* uso de mixin */
+.piePaginas{
+    @include pie;
+}
+
+.piePaginas ul{
+    @include footer-ul;
+    padding-left: 0rem;
+    a{
+        color: #7747fc;
+    }
+}

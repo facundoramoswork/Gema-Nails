@@ -21,7 +21,7 @@ body {
         background-repeat: no-repeat;
         background-size: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content:  flex-end;
         margin: 0px;
         padding-top: 4rem;
@@ -29,6 +29,13 @@ body {
         padding-right: 0.6rem;
         padding-bottom: 4rem;
         text-align: right;
+		a{
+			transition: all 0.2s ease-in-out;
+		}
+		a:hover {
+				color: #ffffff;
+				transform: scale(1.1);
+		}
     }
 }
 .bg-fondo{
@@ -45,12 +52,24 @@ body {
 	padding-right: map-get($navbarPadding, derecha );
 	padding-bottom: map-get($navbarPadding , abajo);
 }
+
+.animate__animated.animate__flipInY{
+	width: 8rem ;
+	justify-self: flex-start;
+	justify-items: flex-start;
+	margin-left: 8rem;
+}
+.animate__animated.animate__flipInY{
+	--animate-duration: 2s;
+}
+
 /* MODIFICACION ESTILO FUENTE DE NAVBAR BTS */
 .nav-link{
 	font-family: "Lato", sans-serif;
 	font-size: 2rem;
 	font-weight: normal;
 	color: #551A8B;
+	
 }
 
 .navbar-nav .nav-link.active{
@@ -76,18 +95,29 @@ body {
 	align-items: center;
 	align-content: center;
 	justify-content: space-evenly;
-	height: 110rem;
+	height: 120rem;
 	margin: 0rem;
-	padding: 4rem 6rem 4rem 6rem;
+	padding: 4rem 12rem 4rem 12rem;
 	text-align: center;
     background-color: #c4ccff;
 	font-size: 2rem;
+	text-align: start;
     h3{
         color: #e574bc;
     }
     strong {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
+	span{
+		font-weight: 700;
+	}
+	p{
+		text-align: start;
+	}
+}
+
+.accordion-body strong{
+	font-size: 2rem;
 }
 
 /* Nuevo mixin */
