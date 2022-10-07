@@ -1,6 +1,9 @@
 
 CHANGELOG :
 
+V 1.5 - Última preentrega del desafío.
+Se redujo el tamaño de las imagenes del sitio para mejorar su SEO, además se eliminaron algunas no utilizadas en el proyecto que si estaban almacenadas en la carpeta multimedia. Nuevos efectos en el menú de navegación al pasar el mouse. Se recupera el logo animado con link en el navbar (ahora más pequeño). Utilización de nuevos span para jerarquizar texto importante. Nuevas imagenes en pagina galeria para darle más relleno a la sección. Agregado nuevo breakpoint de media queries ( 380px). Agregada imagen nueva y estilos más detallados en inputs de página contacto. El iframe cambia de tamaño para ajustarse más a la pagina nosotros. Otros cambios menores.
+
 V 1.4 - Añadidos h1 como encabezado a todas las paginas. Se utilizaron meta keywords y meta description para todas las paginas del sitio. Se resaltaron algunos textos.
 
        Nuevas caracteristicas SEO del sitio:
