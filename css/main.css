@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*/// MAP GET ///*/
 * {
   margin: 0;
@@ -265,7 +266,10 @@ body {
   margin-left: 10px;
   padding: 10px; }
   .redesFacebook img {
-    width: 5rem; }
+    width: 5rem;
+    transition: all 0.2s ease-in-out; }
+  .redesFacebook img:hover {
+    transform: scale(0.8); }
 
 .redesInsta {
   display: block;
@@ -275,9 +279,12 @@ body {
   margin-left: 10px;
   padding: 10px; }
   .redesInsta img {
-    width: 5rem; }
+    width: 5rem;
+    transition: all 0.2s ease-in-out; }
+  .redesInsta img:hover {
+    transform: scale(0.8); }
 
-/* DEBAJO VIENE LINK A WSP QUE POR AHORA NO TENGO POR LO QUE PONGO OTRO LINK SORPRESA */
+/* DEBAJO VIENE LINK A WSP QUE POR AHORA NO TENGO POR LO QUE PONGO OTRO LINK A YOUTUBE */
 .redesWhatsapp {
   position: fixed;
   right: 0px;
@@ -643,6 +650,7 @@ body {
 /* :::Ajustes checkbox y radio buttons ::::*/
 .cb1 {
   display: flex;
+  align-items: center;
   padding: 0.3rem; }
 
 .cb2 {
@@ -654,6 +662,7 @@ body {
 .rd1 {
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 0.3rem; }
 
 .rd2 {
@@ -862,12 +871,15 @@ body {
     font-weight: 700; }
 
 .iframe {
-  width: 1000px; }
+  width: 1000px;
+  height: 400px; }
 
 .subtituloSecundarios {
   font-weight: 700;
   color: #8093f1;
-  font-size: 2.2rem; }
+  font-size: 2.2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .copyFooter {
   background-color: #D59FF5;
@@ -1093,6 +1105,20 @@ ul {
   padding-bottom: 2rem; }
 
 /* ///BREAKPOINT TABLET/// */
+@media (max-width: 900px) {
+  .animate__animated.animate__flipInY {
+    display: none; }
+  .bg-fondo {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  .sectionImage1 {
+    width: 85%;
+    height: auto;
+    padding-left: 1rem; }
+  .sectionImage2 {
+    width: 85%;
+    height: auto; } }
+
 @media (max-width: 768px) {
   .contenedor {
     display: flex;
@@ -1121,6 +1147,7 @@ ul {
     justify-content: space-evenly;
     padding: 2rem; }
   .sectionImage1 {
+    padding-left: 14rem;
     height: 100%; }
   .botellitas {
     margin-top: 1rem;
@@ -1138,6 +1165,26 @@ ul {
   .textoEyelash {
     flex-grow: 1;
     max-height: 200px; } }
+
+/* ///BREAKPOINTS INTERMEDIOS ///*/
+@media (max-width: 520px) {
+  .sectionImage2 {
+    width: 40rem; }
+  .botellitas {
+    padding: 0rem;
+    margin-top: 6rem; } }
+
+@media (max-width: 560px) {
+  .sectionImage2 {
+    width: 40rem; }
+  .botellitas {
+    padding: 0rem; } }
+
+@media (max-width: 640px) {
+  .sectionImage2 {
+    width: 58rem; }
+  .botellitas {
+    padding: 0rem; } }
 
 /* /////BREAKPOINT CELULAR INDEX////// */
 @media (max-width: 500px) {
@@ -1165,11 +1212,13 @@ ul {
     height: auto;
     align-content: center;
     justify-content: center; }
+  .grid {
+    padding: 0rem; }
   .sectionImage1 {
     padding-left: 5rem; }
   .sectionImage2 {
     width: 100%;
-    height: 22rem;
+    height: auto;
     align-content: center;
     justify-content: center; }
   .textoEyelash {
@@ -1180,16 +1229,30 @@ ul {
   .colorFooter {
     display: flex;
     flex-direction: row;
-    justify-self: center; } }
+    justify-items: center;
+    justify-content: center; }
+    .colorFooter b {
+      text-align: center; } }
 
 @media (max-width: 380px) {
+  .animate__animated.animate__shakeX {
+    left: -70px; }
   .principal__titulo {
     font-size: 5.5rem;
     margin-top: 3rem; }
   .iconos strong {
     font-size: 1.3rem; }
   .botellitas {
-    margin-top: 6rem; } }
+    margin-top: 12rem;
+    padding: 1rem; } }
+
+@media (max-width: 360px) {
+  .imagenBienvenida {
+    height: 85rem; }
+  .textoBotellitas {
+    margin: 0rem; }
+  .botellitas {
+    margin-top: 15rem; } }
 
 /* ////Clientes//// */
 @media (max-width: 768px) {
@@ -1232,6 +1295,11 @@ ul {
     .mainSecundarios img {
       max-width: 30rem;
       filter: none; } }
+
+@media (max-width: 405px) {
+  .encabezado img {
+    height: 6rem;
+    width: auto; } }
 
 @media (max-width: 380px) {
   .encabezado img {
@@ -1330,7 +1398,10 @@ ul {
   h4 {
     font-size: 1.4rem; }
   .instagramContacto {
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+  .copyFooter {
+    justify-content: center;
+    text-align: center; } }
 
 @media (max-width: 380px) {
   .opciones {
@@ -1339,7 +1410,9 @@ ul {
     padding-top: 2rem;
     padding-bottom: 2rem; }
   input[type="radio"] {
-    width: 2rem; } }
+    width: 2rem; }
+  .cb1 {
+    padding-top: 0.8rem; } }
 
 @media (max-width: 768px) {
   .animate__animated.animate__flipInY {
@@ -1348,7 +1421,29 @@ ul {
     height: 240rem;
     padding: 6rem; }
     .sectionSecundarios p {
-      text-align: start; } }
+      text-align: start; }
+  .iframe {
+    max-width: 100%;
+    height: auto; } }
+
+@media (max-width: 500px) {
+  .animate__animated.animate__flipInY {
+    display: none; }
+  .sectionSecundarios {
+    height: 230rem;
+    padding: 3rem;
+    font-size: 1.7rem; }
+    .sectionSecundarios img {
+      max-width: 49rem; }
+  .pieParrafo {
+    text-align: center; }
+  .iframe {
+    width: 49rem; } }
+
+@media (max-width: 490px) {
+  .sectionSecundarios img {
+    max-width: 100%;
+    height: auto; } }
 
 @media (max-width: 480px) {
   .animate__animated.animate__flipInY {
@@ -1359,30 +1454,72 @@ ul {
     font-size: 1.7rem;
     margin: 0rem; }
     .sectionSecundarios img {
-      max-width: 478px; } }
+      max-width: 100%;
+      height: auto; } }
 
-@media (max-width: 500px) {
-  .animate__animated.animate__flipInY {
-    display: none; }
-  .sectionSecundarios {
-    height: 230rem;
-    padding: 3rem;
-    font-size: 1.7rem; }
-    .sectionSecundarios img {
-      max-width: 500px; } }
+@media (max-width: 460px) {
+  .iframe {
+    max-width: 100%;
+    height: auto; }
+  .sectionSecundarios img {
+    max-width: 100%;
+    height: auto; } }
+
+@media (max-width: 420px) {
+  .opciones {
+    margin-left: 70px; } }
+
+@media (max-width: 420px) {
+  .iframe {
+    max-width: 100%;
+    height: auto; }
+  .sectionSecundarios img {
+    max-width: 100%;
+    height: auto; } }
 
 @media (max-width: 380px) {
   .sectionSecundarios {
     height: fit-content;
     width: auto;
-    padding: 4rem; }
+    padding: 3rem; }
     .sectionSecundarios img {
-      max-width: 378px; }
+      max-width: 37rem; }
     .sectionSecundarios p {
       padding-top: 1.4rem;
       padding-bottom: 1.4rem; }
   .iframe {
     width: 36rem; } }
+
+/* Medida de pantalla pequeña más usada estos días segun investigación  */
+@media (max-width: 360px) {
+  .iframe {
+    width: 35rem; }
+  .sectionSecundarios img {
+    width: 35rem; }
+  .iconoUbicacion {
+    display: none; } }
+
+@media (max-width: 345px) {
+  .iframe {
+    width: 34rem; }
+  .sectionSecundarios {
+    padding: 2rem; }
+    .sectionSecundarios img {
+      width: 34rem; }
+    .sectionSecundarios h1 {
+      text-align: center; } }
+
+@media (max-width: 335px) {
+  .iframe {
+    width: 33rem; }
+  .sectionSecundarios img {
+    width: 33rem; } }
+
+@media (max-width: 320px) {
+  .iframe {
+    width: 32rem; }
+  .sectionSecundarios img {
+    width: 32rem; } }
 
 @media (max-width: 768px) {
   .menuSuperior nav {
@@ -1405,6 +1542,10 @@ ul {
     font-size: 2rem; } }
 
 /* ///BREAKPOINT CELULAR/// */
+@media (max-width: 600px) {
+  .mainPreguntas {
+    height: 190rem; } }
+
 @media (max-width: 500px) {
   .menuSuperior nav {
     display: flex;
@@ -1435,6 +1576,10 @@ ul {
     height: 170rem;
     padding-top: 3rem;
     padding-bottom: 3rem; } }
+
+@media (max-width: 420px) {
+  .mainPreguntas {
+    height: 184rem; } }
 
 @media (max-width: 380px) {
   .mainPreguntas {

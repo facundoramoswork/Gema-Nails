@@ -363,7 +363,11 @@ body {
 	padding: 10px;
     img {
         width: 5rem;
+		transition: all 0.2s ease-in-out;
     }
+	img:hover{
+		transform: scale(0.8);
+	}
 }
 
 .redesInsta {
@@ -375,10 +379,13 @@ body {
 	padding: 10px;
     img {
         width: 5rem;
+		transition: all 0.2s ease-in-out;
     }
-    
+	img:hover{
+		transform: scale(0.8);
+	}
 }
-/* DEBAJO VIENE LINK A WSP QUE POR AHORA NO TENGO POR LO QUE PONGO OTRO LINK SORPRESA */
+/* DEBAJO VIENE LINK A WSP QUE POR AHORA NO TENGO POR LO QUE PONGO OTRO LINK A YOUTUBE */
 .redesWhatsapp {
 	position: fixed;
 	right: 0px;
