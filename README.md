@@ -1,6 +1,10 @@
 
 CHANGELOG :
 
+V 1.6- Se corrige en altura el tamaño del menu de navegacion superior de todas las paginas del sitio. Se añaden efectos de hover en todas las paginas en seccion footer para los iconos de las redes. Se agregó a la pagina CLIENTES sombra al pasar el puntero sobre las imagenes, asimismo se elimina el efecto de ampliación en ancho de las img para evitar el estiramiento de elementos adyacentes que no quedaba del todo bien desde lo visual. Además se agrega un gif en la zona con espacio negativo de la misma pagina que refiere a la galeria del sitio. 
+        Se añaden también animaciones en la pagina de CONTACTO y en Index para lograr mayor dinamismo en el sitio. Un nuevo gif reemplaza el icono de mapa en la pagina NOSOTROS. A su vez se corrige el texto en esta misma pagina en cuanto a su distancia entre otros elementos.
+        En el INDEX.html se logra corregir el contraste de las letras del parrafo principal superior de la pagina respecto a la imagen de fondo (utilizando un nuevo div flotante y uso de box-shadow).
+
 V 1.5 - Última preentrega del desafío.
 Se redujo el tamaño de las imagenes del sitio para mejorar su SEO, además se eliminaron algunas no utilizadas en el proyecto que si estaban almacenadas en la carpeta multimedia. Nuevos efectos en el menú de navegación al pasar el mouse. Se recupera el logo animado con link en el navbar (ahora más pequeño). Utilización de nuevos span para jerarquizar texto importante. Nuevas imagenes en pagina galeria para darle más relleno a la sección. Agregado nuevo breakpoint de media queries ( 380px). Agregada imagen nueva y estilos más detallados en inputs de página contacto. El iframe cambia de tamaño para ajustarse más a la pagina nosotros. Otros cambios menores.
 
