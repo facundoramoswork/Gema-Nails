@@ -11,7 +11,7 @@ body {
 	font-family: "Lato", sans-serif;
 	
 }
-
+/* MENU DE NAVEGACION SUPERIOR-PRINCIPAL */
 .menuSuperior {
 	z-index: 1000;
     position: sticky;
@@ -25,23 +25,24 @@ body {
         flex-direction: row-reverse;
         justify-content: flex-end;
         margin: 0px;
-        padding-top: 4rem;
+        padding-top: 2rem;
         padding-left: 0.6rem;
         padding-right: 0.6rem;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
         text-align: right;
     }
 }
+/* MODIFICACION PARA "PISAR" ESTILOS PREDEFINIDOS DE BOOTSTRAP */
 .bg-fondo{
 	background-color: #c89effc2;
 	background-image: url(../multimedia/mano.descendiendo1.jpg);
 	background-repeat: no-repeat;
 	background-size: auto;
 	margin: 0px;
-	padding-top: 4rem;
+	padding-top: 2rem;
 	padding-left: 0.6rem;
 	padding-right: 0.6rem;
-	padding-bottom: 4rem;
+	padding-bottom: 2rem;
     a{
 		transition: all 0.2s ease-in-out;
 	}
@@ -50,7 +51,7 @@ body {
 			transform: scale(1.1);
 	}
 }
-
+/* LOGO DE NAVBAR */
 .animate__animated.animate__flipInY{
 	width: 8rem ;
 	justify-self: flex-start;
@@ -86,6 +87,7 @@ body {
     --bs-nav-link-padding-y: 0.8rem;
 }
 
+/* DIV DE ENCABEZADO PARA GALERIA-CLIENTES */
 .encabezado{
 	background-color: #c89effc2;
 	color: #644fdd;
@@ -115,7 +117,7 @@ body {
         grid-template-areas: 
         "texto1 imagen1 imagen2"
         " animacion imagen3 imagen4"
-        " . imagen5 imagen6"
+        " icono imagen5 imagen6"
         "texto2 imagen7 imagen8"
         "texto3 imagen9 imagen10"
         ;
@@ -130,11 +132,12 @@ body {
             width: 40rem;
             height: auto;
             margin: 0rem;
+            box-shadow: 2s;
             transition: width 2s;
             filter: grayscale(100%);
         }
         img:hover{
-            width: 43rem;
+            box-shadow: 5px 5px 20px #551A8B;
             border: solid #7E78D2;
             filter: none;
         }
@@ -197,7 +200,11 @@ body {
         font-size: 3rem;
         justify-self: center;
     }
-
+    /* NUEVO ICONO PARA RELLENAR ESPACIO NEGATIVO DE ZONA CENTRAL DE LA PAG/SUPERIOR EN MOBILE*/ /* VISTO COMO .slot BAJO CLASE PREDEF DE BTS */
+    .lordIcon{
+        grid-area: icono;
+        justify-self: center;
+    }
 
     /* FOOTER DE LA PAGINA */
     .copyFooter{
@@ -237,6 +244,7 @@ body {
         width: 5rem;
     }
 }
+ /* NAVBAR DE FOOTER */ 
 /* uso de mixin */
 .piePaginas{
     @include pie;

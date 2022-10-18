@@ -11,6 +11,7 @@ body {
 	font-family: "Lato", sans-serif;
 	
 }
+/* menu de navegacion superior */
 .menuSuperior {
 	z-index: 1000;
     position: sticky;
@@ -24,10 +25,10 @@ body {
         flex-direction: row-reverse;
         justify-content:  flex-end;
         margin: 0px;
-        padding-top: 4rem;
+        padding-top: 2rem;
         padding-left: 0.6rem;
         padding-right: 0.6rem;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
         text-align: right;
 		a{
 			transition: all 0.2s ease-in-out;
@@ -38,6 +39,7 @@ body {
 		}
     }
 }
+/* CORRECCION ESTILO MENU SUPERIOR POST BTS- USO DE VARIABLE */
 .bg-fondo{
 	background-color: $Navbar;
 	background-image: url(../multimedia/mano.descendiendo1.jpg);
@@ -52,7 +54,7 @@ body {
 	padding-right: map-get($navbarPadding, derecha );
 	padding-bottom: map-get($navbarPadding , abajo);
 }
-
+/* LOGO SMALL DE NAVBAR */
 .animate__animated.animate__flipInY{
 	width: 8rem ;
 	justify-self: flex-start;
@@ -88,7 +90,7 @@ body {
     --bs-nav-link-padding-y: 0.8rem;
 }
 
-
+/* MAIN PRINCIPAL DE PAGINA PREGUNTAS */
 .mainPreguntas{
 	display: flex;
 	flex-direction: column;
@@ -115,7 +117,7 @@ body {
 		text-align: start;
 	}
 }
-
+/* RESALTADO DE TEXTO EN ACORDION BTS */
 .accordion-body strong{
 	font-size: 2rem;
 }
@@ -125,7 +127,6 @@ body {
 	@include tituloPreguntas ( #7747fc, start, 3rem) ;
 }
 
-
 .mainSecundarios h3{
 	color: #8093f1;
 	text-align: center;
@@ -134,7 +135,7 @@ body {
 .parrafo {
 	text-align: center;
 }
-
+/* ANIMACION DE H1 */
 @keyframes Preguntas {
 	0%{
 		opacity: 100%;
@@ -165,6 +166,7 @@ body {
 	animation-iteration-count: infinite;
 }
 
+/* modificacion estilos acordion */
 .accordion-button {
 	color: #FFFF;
 	background-color: #e574bc;
@@ -188,6 +190,7 @@ body {
 p{
 	margin-bottom: 0rem;
 }
+/* footer */
 .copyFooter{
 	background-color:$colorFooter ;
 	color: black;

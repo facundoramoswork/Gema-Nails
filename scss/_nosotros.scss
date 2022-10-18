@@ -11,7 +11,7 @@ body {
 	font-family: "Lato", sans-serif;
 	
 }
-
+/* MENU DE NAVEGACION SUPERIOR */
 .menuSuperior {
 	z-index: 1000;
     position: sticky;
@@ -25,10 +25,10 @@ body {
         flex-direction: row-reverse;
         justify-content:  flex-end;
         margin: 0px;
-        padding-top: 4rem;
+        padding-top: 2rem;
         padding-left: 0.6rem;
         padding-right: 0.6rem;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
         text-align: right;
         a{
             transition: all 0.2s ease-in-out;
@@ -39,16 +39,17 @@ body {
         }
     }
 }
+/* CORRECCION DE ESTILOS DE NAVBAR POST AGREGADO DE BTS AL SITIO */
 .bg-fondo{
 	background-color: #c89effc2;
 	background-image: url(../multimedia/mano.descendiendo1.jpg);
 	background-repeat: no-repeat;
 	background-size: auto;
 	margin: 0px;
-	padding-top: 4rem;
+	padding-top: 2rem;
 	padding-left: 0.6rem;
 	padding-right: 0.6rem;
-	padding-bottom: 4rem;
+	padding-bottom: 2rem;
     a{
 		transition: all 0.2s ease-in-out;
 	}
@@ -57,7 +58,7 @@ body {
 			transform: scale(1.1);
 	}
 }
-
+/* LOGO ANIMADO DE NAVBAR */
 .animate__animated.animate__flipInY{
 	width: 8rem ;
 	justify-self: flex-start;
@@ -68,6 +69,7 @@ body {
 	--animate-duration: 2s;
 }
 
+/* ESTILO SECTION DE PAGINA NOSOTROS */
 .sectionSecundarios{
     display:flex;
     flex-direction: column;
@@ -87,18 +89,23 @@ body {
         padding-bottom: 2rem;
     }
     p{
-        text-align: center;
+        text-align: justify;
     }
     span{
         font-weight: 700;
     }
 }
+/* MAPA INCLUIDO AL SITIO DESDE GOOGLE MAPS */
 .iframe{
     width: 1000px;
     height: 400px;
 }
 
-
+.espaciadoParrafo{
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+/* ESTILO DE H2 DE LA PAGINA */
 .subtituloSecundarios {
 	font-weight: 700;
 	color: #8093f1;
@@ -106,13 +113,13 @@ body {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-
-
+/* ESTILOS FOOTER */
 .copyFooter{
     background-color: #D59FF5 ;
     color: black;
     font-size: 1.3rem;
 }
+/* SECTION ZONA ARRIBA DEL FOOTER */
 .fondoRedes{
     display: flex;
     justify-content: center;
@@ -121,7 +128,6 @@ body {
     align-items: center;
     background-color: #D59FF5;
 }
-
 
 .redesFacebook {
 display: inline-block;
@@ -145,7 +151,9 @@ img {
     width: 5rem;
 }
 }
+
 /* uso de mixin */
+/* NAVBAR FOOTER */
 .piePaginas{
 @include pie;
 }

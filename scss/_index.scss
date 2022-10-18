@@ -11,7 +11,7 @@ body {
 	font-family: "Lato", sans-serif;
 	
 }
-
+/* MENUS DE NAV DE LA PAGINA */
 .menuSuperior {
 	z-index: 1000;
     position: sticky;
@@ -25,10 +25,10 @@ body {
         flex-direction: row;
         justify-content:  flex-end;
         margin: 0px;
-        padding-top: 4rem;
+        padding-top: 2rem;
         padding-left: 0.6rem;
         padding-right: 0.6rem;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
         text-align: right;
     }
 }
@@ -52,7 +52,7 @@ body {
 			transform: scale(1.1);
 	}
 }
-
+/* LOGO ANIMADO */
 .animate__animated.animate__flipInY{
 	width: 8rem ;
 	justify-self: flex-start;
@@ -67,7 +67,6 @@ body {
 .nav-link{
 	font-family: "Lato", sans-serif;
 	font-size: 2rem;
-	font-weight: normal;
 	color: #551A8B;
 }
 
@@ -87,7 +86,7 @@ body {
     --bs-nav-link-padding-x: 0.8rem;
     --bs-nav-link-padding-y: 0.8rem;
 }
-
+/* FONDO PAGINA IDEX - SECCIONES QUE NO TIENEN SU COLOR PROPIO*/
 .contenedor{
 	background: rgba(255, 255, 255, 1);
 	background: -moz-linear-gradient(
@@ -142,7 +141,7 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ff9ed3', GradientType=1 );
 	font-size: 1.6rem;
 }
-
+/* MAIN DE LA PAGINA - SU CIERRE DA INICIO A UNA GRILLA */
 .principal {
 	background-color: #c4ccff;
 	font-size: 2rem;
@@ -169,7 +168,6 @@ body {
             text-align: right;
         }
 }
-
 }
 
 .imagenLogo {
@@ -179,7 +177,7 @@ body {
 	z-index: 1;
     position: relative;
 }
-
+/* LOGO ANIMADO */
 .animate__animated.animate__shakeX{
 	position: absolute;
 	top: -50px;
@@ -192,6 +190,7 @@ body {
         justify-content: space-around;
     }
 }
+/* ESTILO DE IMAGEN PERTENECIENTE A MAIN CON TEXTO ENCIMA DE LA MISMA */
 .imagenBienvenida {
 	background-image: url(../multimedia/imagenpestaniasunias1.jpg);
 	height: 100%;
@@ -217,11 +216,27 @@ body {
         text-align: center;
     }    
 }
+/* DIV "FLOTANTE" PARA CONTRASTAR TEXTO SOBRE IMAGEN */
+.fondo--parrafoPrincipal{
+	margin-top: 4rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	background-color: #c4ccff;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	color: #dd4fb5;
+	box-shadow: 3px 3px 12px, 10px 10px 15px black;
+}
+/* TEXTO DENTRO DEL DIV FLOTANTE */
 .parrafoPrincipal{
+	margin-top: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 	line-height: 1.4;
 	font-weight: 800;
 }
 
+/* COMIENZA LA GRILLA DE IMAGEN A LA IZQ Y TEXTO EN DERECHA */
 .grid{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -236,8 +251,7 @@ body {
         font-size: 2rem;
     }
 }
-
-
+/* ELEMENTO DE IZQ Y ARRIBA */
 .eyelash{
 	grid-area: eyelash;
 	justify-self: center;
@@ -250,13 +264,14 @@ body {
 	height: auto;
 	padding-left: 12rem;
 }
-
+/* ELEMENTOS DERECHA Y ARRIBA */
 .textoEyelash{
 	grid-area: textoEyelash;
 	padding: 2rem;
 	margin: 2rem;
 }
 
+/* ELEMENTO IZQUIERDA Y ARRIBA */
 .botellitas{
 	grid-area: botellitas;
 	justify-self:center;
@@ -266,6 +281,7 @@ body {
 	
 	
 }
+/* ELEMENTO ABAJO Y DERECHA */
 .textoBotellitas{
 	grid-area: textoBotellitas;
 	padding: 2rem;
@@ -282,11 +298,12 @@ body {
         color: #7747fc;
     }
 }
+
 #fondoPagina2 {
 	background-color: #e2fdfd;
 }
 
-
+/* DIV CON CARACTERISTICAS DE EMPRESA - 3 ELEMENTOS */
 .iconos{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -327,24 +344,64 @@ body {
 	grid-area: textoIcono3;
 }
 
+/* ESTILO Y ANIMACION DE 3 ICONOS DEL DIV */
 .icono1{
 	grid-area: icono1;
+	animation-name: temblorcito;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		animation: swing 1s ease;
+		animation-iteration-count: 1;
+		}
 }
-
+@keyframes temblorcito {   
+	15% {
+	transform: translateX(5px);
+	}
+	30% {
+	transform: translateX(-5px);
+	}
+	50% {
+	transform: translateX(3px);
+	}
+	65% {
+	transform: translateX(-3px);
+	}
+	80% {
+	transform: translateX(2px);
+	}
+	100% {
+	transform: translateX(0);
+	}
+}
 .icono2{
 	grid-area: icono2;
+	animation-name: temblorcito;
 	margin-bottom: 10px;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		animation: swing 1s ease;
+		animation-iteration-count: 1;
+		}
 }
 
 .icono3{
 	grid-area: icono3;
+	animation-name: tembloricto;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		animation: swing 1s ease;
+		animation-iteration-count: 1;
+		}
 }
 
+/* TEXTO PIE DE PAGINA IDEX */
 .copyFooter{
 	background-color: #D59FF5 ;
 	color: black;
 	font-size: 1.3rem;
 }
+/* CAJA DE PIE DE PAGINA */
 .fondoRedes{
 	display: flex;
 	justify-content: center;
@@ -353,7 +410,7 @@ body {
 	align-items: center;
 	background-color: #D59FF5;
 }
-
+/* LOGO FB SECCION DE REDES */
 .redesFacebook {
 	display: inline-block;
 	margin-top: 10px;
@@ -369,7 +426,7 @@ body {
 		transform: scale(0.8);
 	}
 }
-
+/*  LOGO IG SECCION DE REDES */
 .redesInsta {
 	display: block;
 	margin-top: 10px;
@@ -385,7 +442,7 @@ body {
 		transform: scale(0.8);
 	}
 }
-/* DEBAJO VIENE LINK A WSP QUE POR AHORA NO TENGO POR LO QUE PONGO OTRO LINK A YOUTUBE */
+/* DEBAJO VIENE LINK A WSP QUE POR AHORA NO TENGO LINKEADO POR LO QUE PONGO OTRO LINK A YOUTUBE */
 .redesWhatsapp {
 	position: fixed;
 	right: 0px;
@@ -394,7 +451,7 @@ body {
         width: 12rem;
     }
 }
-
+/* NAVBAR DE FOOTER */
 .piePagina__index{
 	display: flex;
 	flex-direction: column;
