@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
@@ -194,6 +195,7 @@ body {
 .imagenBienvenida {
 	background-image: url(../multimedia/imagenpestaniasunias1.jpg);
 	height: 100%;
+	max-width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: 0.3rem;
@@ -303,7 +305,7 @@ body {
 	background-color: #e2fdfd;
 }
 
-/* DIV CON CARACTERISTICAS DE EMPRESA - 3 ELEMENTOS */
+/* DIV CON CARACTERISTICAS DEl SERVICIO	 - 3 ELEMENTOS */
 .iconos{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -317,7 +319,7 @@ body {
 	align-content: center;
 	align-items: center;
     img{
-        width: 10rem;
+        max-width: 10rem;
         height: auto;
     }
     p{
@@ -397,7 +399,7 @@ body {
 
 /* TEXTO PIE DE PAGINA IDEX */
 .copyFooter{
-	background-color: #D59FF5 ;
+	background-color: $colorFooter ;
 	color: black;
 	font-size: 1.3rem;
 }
@@ -408,7 +410,7 @@ body {
 	justify-items: center;
 	align-content: center;
 	align-items: center;
-	background-color: #D59FF5;
+	background-color: $colorFooter;
 }
 /* LOGO FB SECCION DE REDES */
 .redesFacebook {
@@ -472,4 +474,7 @@ body {
 	color: black;
 	align-self: flex-start;
 	font-size: 1.3rem;
+	b{
+		padding-left: 2rem;
+	}
 }

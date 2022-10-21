@@ -19,7 +19,6 @@
     }
 }
 
-
 @media (max-width:768px){
 	.contenedor{
 		display: flex;
@@ -91,6 +90,7 @@
 		max-height: 200px;
 	}
 }
+
 /* ///BREAKPOINTS INTERMEDIOS ///*/
 @media (max-width:520px){
     .sectionImage2{
@@ -120,7 +120,6 @@
 }
 
 /* /////BREAKPOINT CELULAR INDEX////// */
-
 @media (max-width:500px){
 	.contenedor {
 		display: flex;
@@ -186,9 +185,11 @@
         justify-content: center;
         b{
             text-align: center;
+            padding-left: 0rem;
         }
 	}
 }
+
 @media (max-width:380px){
     .animate__animated.animate__shakeX{
         left: -70px;
@@ -200,9 +201,14 @@
     .iconos strong{
         font-size: 1.3rem;
     }
+    
     .botellitas {
         margin-top: 12rem;
         padding: 1rem;
+    }
+    .redesWhatsapp img{
+        width: 10rem;
+        height: auto;
     }
 }
 
@@ -227,7 +233,7 @@
         grid-gap: 1rem ;
         padding: 1.5rem;
         img{
-            width: 30rem;
+            width: 24rem;
         }
     }
 
@@ -246,6 +252,7 @@
         font-size: 2rem;
     }
 }
+
 @media (max-width:768px){
 	.mainSecundarios img{
 		transition: none;
@@ -271,7 +278,7 @@
         flex-wrap: wrap;
         align-content: center;
         img{
-            max-width: 30rem;
+            max-width: 40rem;
             filter: none;
         }
     }
@@ -308,6 +315,12 @@
         .animate__animated.animate__flipInY{
             display: none;
         }
+
+        .animacion img{
+            width: 30rem;
+            height: auto ;
+        }
+
     #formulario {
         grid-template-areas:
         "opciones ."
@@ -331,12 +344,13 @@
     p{
 	margin-bottom: 0rem;
     }
+
     ul{
 	margin-bottom: 0rem;
 	padding-bottom: 2rem;
-
     }
 }
+
 @media (max-width: 500px) {
 
     .menuSuperior nav{
@@ -439,12 +453,21 @@
     .copyFooter{
         justify-content: center;
         text-align: center;
+        b{
+            padding-left: 0rem;
+        }
+    }
+}
+
+@media (max-width:420px){
+    .opciones{
+        margin-left: 70px;
     }
 }
 
 @media (max-width:380px){
     .opciones{
-        margin-left: 65px;
+        margin-left: 60px;
     }
     .botones{
         padding-top: 2rem;
@@ -457,6 +480,8 @@
         padding-top: 0.8rem;
     }
 }
+
+
 ///// nosotros /////
 
 @media (max-width:768px){
@@ -481,7 +506,8 @@
         display: none;
     }
 	.sectionSecundarios{
-		height: 230rem;
+        height: fit-content;
+        width: auto;
 		padding: 3rem;
 		font-size: 1.7rem;
         img{
@@ -490,6 +516,7 @@
 	}
     .pieParrafo{
         text-align: center;
+        padding-left: 0rem;
     }
     .iframe{
         width: 49rem;
@@ -502,11 +529,13 @@
         height: auto;
     }
 }
+
 @media  (max-width: 480px){
     .animate__animated.animate__flipInY{
         display: none;
     }
-.sectionSecundarios{
+
+    .sectionSecundarios{
     height: 230rem;
     padding: 3rem;
     font-size: 1.7rem;
@@ -517,20 +546,17 @@
     }
 }
 }
+
 @media (max-width:460px){
     .iframe{
         max-width: 100%;
         height: auto;
     }
     .sectionSecundarios img{
-        max-width: 100%;
-        height: auto;
+        max-height: 60rem;
+        width: auto;
     }
-}
-@media (max-width:420px){
-    .opciones{
-        margin-left: 70px;
-    }
+
 }
 
 @media (max-width:420px){
@@ -540,7 +566,14 @@
     }
     .sectionSecundarios img{
         max-width: 100%;
-        height: auto;
+        max-height: 53rem;
+    }
+}
+
+@media (max-width:412px){
+    .sectionSecundarios{
+        height: fit-content;
+        width: auto;
     }
 }
 
@@ -556,12 +589,15 @@
             padding-top: 1.4rem;
             padding-bottom: 1.4rem;
         }
+        h1{
+            text-align: center;
+        }
     }
     .iframe{
         width: 36rem;
     }
-
 }
+
 /* Medida de pantalla pequeña más usada estos días segun investigación  */
 @media (max-width: 360px){  
     .iframe{
@@ -605,14 +641,15 @@
 
 @media (max-width:320px){
 .iframe {
-    width: 32rem;
+    width: 31rem;
 }
 .sectionSecundarios{
     img{
-        width: 32rem;
+        width: 31rem;
     }
 }
 }
+
 ///// preguntas /////
 
 @media (max-width:768px){
@@ -640,8 +677,11 @@
 	}
 
 	.mainPreguntas strong {
-		font-size: 2rem;
+		font-size: 2.4rem;
 	}
+    .accordion-body strong{
+        font-size: $textodefault;
+    }
 }
 
 /* ///BREAKPOINT CELULAR/// */
@@ -649,6 +689,7 @@
 @media (max-width:600px){
     .mainPreguntas{
         height: 190rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -678,8 +719,11 @@
 	}
 
 	.mainPreguntas strong {
-		font-size: 1.7rem;
+		font-size: 1.9rem;
 	}
+    .accordion-body strong{
+        font-size: 1.7rem;
+    }
 	.grid{
 		display: flex;
 		flex-direction: column;
@@ -689,15 +733,37 @@
 		padding-top: 3rem;
 		padding-bottom: 3rem;
 	}
+    .pieParrafo{
+        text-align: center;
+        padding-left: 0rem;
+    }
+}
+
+@media (max-width: 460px){
+    .mainPreguntas{
+        height: max-content;
+    }
+    p {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    strong{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
 }
 
 @media (max-width:420px){
     .mainPreguntas{
-        height: 184rem;
+        height: max-content;
     }
 }
+
 @media (max-width:380px){
     .mainPreguntas {
         height: fit-content;
+        h1{
+            text-align: center;
+        }
     }
 }

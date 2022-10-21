@@ -2,7 +2,8 @@
 /*/// MAP GET ///*/
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
@@ -136,6 +137,7 @@ body {
 .imagenBienvenida {
   background-image: url(../multimedia/imagenpestaniasunias1.jpg);
   height: 100%;
+  max-width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 0.3rem;
@@ -229,7 +231,7 @@ body {
 #fondoPagina2 {
   background-color: #e2fdfd; }
 
-/* DIV CON CARACTERISTICAS DE EMPRESA - 3 ELEMENTOS */
+/* DIV CON CARACTERISTICAS DEl SERVICIO	 - 3 ELEMENTOS */
 .iconos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -240,7 +242,7 @@ body {
   align-content: center;
   align-items: center; }
   .iconos img {
-    width: 10rem;
+    max-width: 10rem;
     height: auto; }
   .iconos p {
     text-align: center;
@@ -371,6 +373,8 @@ body {
   color: black;
   align-self: flex-start;
   font-size: 1.3rem; }
+  .colorFooter b {
+    padding-left: 2rem; }
 
 * {
   margin: 0;
@@ -465,7 +469,6 @@ body {
     width: 6rem;
     height: auto; }
 
-/* GRADIENTE FONDO DE GALERIA */
 /* /////GRILLA DE GALERIA /////*/
 .mainSecundarios {
   background: #ffa8d6;
@@ -594,6 +597,10 @@ body {
   padding-left: 0rem; }
   .piePaginas ul a {
     color: #7747fc; }
+
+.pieParrafo {
+  font-weight: 800;
+  padding-left: 2rem; }
 
 * {
   margin: 0;
@@ -799,6 +806,8 @@ body {
   background-color: #D59FF5;
   color: black;
   font-size: 1.3rem; }
+  .copyFooter b {
+    padding-left: 2rem; }
 
 p {
   margin-bottom: 0rem; }
@@ -868,6 +877,13 @@ input {
   margin: 4px;
   padding: 8px;
   border-radius: 4px; }
+  #formulario .botones input:hover {
+    background: #ff53d4 radial-gradient(circle, transparent 1%, #fdaefd 1%) center/15000%;
+    color: white; }
+  #formulario .botones input:active {
+    background-color: #3c1777;
+    background-size: 100%;
+    transition: background 0.5s; }
 
 /* imagen animada a la derecha de la pagina */
 .animate__animated.animate__heartBeat {
@@ -1028,6 +1044,10 @@ body {
   .piePaginas ul a {
     color: #7747fc; }
 
+.pieParrafo {
+  font-weight: 800;
+  padding-left: 2rem; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -1184,7 +1204,7 @@ body {
   --bs-accordion-border-color: #c4ccff ;
   --bs-accordion-btn-focus-border-color: #7747fc;
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(177, 81, 255, 0.781);
-  --bs-accordion-active-color: #7747fc;
+  --bs-accordion-active-color: $footerNav;
   --bs-accordion-active-bg: #e7f1ff; }
 
 p {
@@ -1198,6 +1218,10 @@ p {
 
 .piePaginas ul a {
   color: #7747fc; }
+
+.pieParrafo {
+  font-weight: 800;
+  padding-left: 2rem; }
 
 ul a {
   color: #7747fc; }
@@ -1337,7 +1361,8 @@ ul {
     justify-items: center;
     justify-content: center; }
     .colorFooter b {
-      text-align: center; } }
+      text-align: center;
+      padding-left: 0rem; } }
 
 @media (max-width: 380px) {
   .animate__animated.animate__shakeX {
@@ -1349,7 +1374,10 @@ ul {
     font-size: 1.3rem; }
   .botellitas {
     margin-top: 12rem;
-    padding: 1rem; } }
+    padding: 1rem; }
+  .redesWhatsapp img {
+    width: 10rem;
+    height: auto; } }
 
 @media (max-width: 360px) {
   .imagenBienvenida {
@@ -1367,7 +1395,7 @@ ul {
     grid-gap: 1rem;
     padding: 1.5rem; }
     .mainSecundarios img {
-      width: 30rem; }
+      width: 24rem; }
   .texto1 {
     padding-left: 1rem;
     font-size: 2rem; }
@@ -1398,7 +1426,7 @@ ul {
     flex-wrap: wrap;
     align-content: center; }
     .mainSecundarios img {
-      max-width: 30rem;
+      max-width: 40rem;
       filter: none; } }
 
 @media (max-width: 405px) {
@@ -1421,6 +1449,9 @@ ul {
     align-content: flex-start; }
   .animate__animated.animate__flipInY {
     display: none; }
+  .animacion img {
+    width: 30rem;
+    height: auto; }
   #formulario {
     grid-template-areas: "opciones ." " checkbox fieldset " "textarea textarea"; }
   fieldset {
@@ -1506,11 +1537,17 @@ ul {
     font-size: 1.6rem; }
   .copyFooter {
     justify-content: center;
-    text-align: center; } }
+    text-align: center; }
+    .copyFooter b {
+      padding-left: 0rem; } }
+
+@media (max-width: 420px) {
+  .opciones {
+    margin-left: 70px; } }
 
 @media (max-width: 380px) {
   .opciones {
-    margin-left: 65px; }
+    margin-left: 60px; }
   .botones {
     padding-top: 2rem;
     padding-bottom: 2rem; }
@@ -1535,13 +1572,15 @@ ul {
   .animate__animated.animate__flipInY {
     display: none; }
   .sectionSecundarios {
-    height: 230rem;
+    height: fit-content;
+    width: auto;
     padding: 3rem;
     font-size: 1.7rem; }
     .sectionSecundarios img {
       max-width: 49rem; }
   .pieParrafo {
-    text-align: center; }
+    text-align: center;
+    padding-left: 0rem; }
   .iframe {
     width: 49rem; } }
 
@@ -1567,12 +1606,8 @@ ul {
     max-width: 100%;
     height: auto; }
   .sectionSecundarios img {
-    max-width: 100%;
-    height: auto; } }
-
-@media (max-width: 420px) {
-  .opciones {
-    margin-left: 70px; } }
+    max-height: 60rem;
+    width: auto; } }
 
 @media (max-width: 420px) {
   .iframe {
@@ -1580,7 +1615,12 @@ ul {
     height: auto; }
   .sectionSecundarios img {
     max-width: 100%;
-    height: auto; } }
+    max-height: 53rem; } }
+
+@media (max-width: 412px) {
+  .sectionSecundarios {
+    height: fit-content;
+    width: auto; } }
 
 @media (max-width: 380px) {
   .sectionSecundarios {
@@ -1592,6 +1632,8 @@ ul {
     .sectionSecundarios p {
       padding-top: 1.4rem;
       padding-bottom: 1.4rem; }
+    .sectionSecundarios h1 {
+      text-align: center; }
   .iframe {
     width: 36rem; } }
 
@@ -1622,9 +1664,9 @@ ul {
 
 @media (max-width: 320px) {
   .iframe {
-    width: 32rem; }
+    width: 31rem; }
   .sectionSecundarios img {
-    width: 32rem; } }
+    width: 31rem; } }
 
 @media (max-width: 768px) {
   .menuSuperior nav {
@@ -1644,12 +1686,15 @@ ul {
     .mainPreguntas .bg-fondo {
       padding: 0.2rem; }
   .mainPreguntas strong {
+    font-size: 2.4rem; }
+  .accordion-body strong {
     font-size: 2rem; } }
 
 /* ///BREAKPOINT CELULAR/// */
 @media (max-width: 600px) {
   .mainPreguntas {
-    height: 190rem; } }
+    height: 190rem;
+    font-size: 1.8rem; } }
 
 @media (max-width: 500px) {
   .menuSuperior nav {
@@ -1672,6 +1717,8 @@ ul {
     justify-content: space-evenly;
     font-size: 1.7rem; }
   .mainPreguntas strong {
+    font-size: 1.9rem; }
+  .accordion-body strong {
     font-size: 1.7rem; }
   .grid {
     display: flex;
@@ -1680,12 +1727,27 @@ ul {
     align-items: center;
     height: 170rem;
     padding-top: 3rem;
-    padding-bottom: 3rem; } }
+    padding-bottom: 3rem; }
+  .pieParrafo {
+    text-align: center;
+    padding-left: 0rem; } }
+
+@media (max-width: 460px) {
+  .mainPreguntas {
+    height: max-content; }
+  p {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+  strong {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; } }
 
 @media (max-width: 420px) {
   .mainPreguntas {
-    height: 184rem; } }
+    height: max-content; } }
 
 @media (max-width: 380px) {
   .mainPreguntas {
-    height: fit-content; } }
+    height: fit-content; }
+    .mainPreguntas h1 {
+      text-align: center; } }

@@ -17,7 +17,7 @@ body {
     position: sticky;
 	top: 0%;
     nav {
-        background-color: #c89effc2;
+        background-color: $Navbar;
         background-image: url(../multimedia/mano.descendiendo1.jpg);
         background-repeat: no-repeat;
         background-size: auto;
@@ -41,7 +41,7 @@ body {
 }
 /* CORRECCION DE ESTILOS DE NAVBAR POST AGREGADO DE BTS AL SITIO */
 .bg-fondo{
-	background-color: #c89effc2;
+	background-color: $Navbar;
 	background-image: url(../multimedia/mano.descendiendo1.jpg);
 	background-repeat: no-repeat;
 	background-size: auto;
@@ -58,6 +58,7 @@ body {
 			transform: scale(1.1);
 	}
 }
+
 /* LOGO ANIMADO DE NAVBAR */
 .animate__animated.animate__flipInY{
 	width: 8rem ;
@@ -77,7 +78,7 @@ body {
     align-items: center;
     height: 200rem;
     justify-content: space-evenly;
-    font-size: 2rem;
+    font-size: $textodefault;
     background-color: #dee2ff;
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -115,7 +116,7 @@ body {
 }
 /* ESTILOS FOOTER */
 .copyFooter{
-    background-color: #D59FF5 ;
+    background-color: $colorFooter ;
     color: black;
     font-size: 1.3rem;
 }
@@ -126,7 +127,7 @@ body {
     justify-items: center;
     align-content: center;
     align-items: center;
-    background-color: #D59FF5;
+    background-color: $colorFooter;
 }
 
 .redesFacebook {
@@ -164,4 +165,9 @@ padding-left: 0rem;
 a{
     color: #7747fc;
 }
+}
+
+.pieParrafo{
+	font-weight: 800;
+	padding-left: 2rem;
 }

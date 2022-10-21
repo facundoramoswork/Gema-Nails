@@ -1,6 +1,10 @@
 
 CHANGELOG :
 
+V 1.7- Se comprime el tamaño de todas las imágenes del sitio, además se eliminan algunas imagenes que no se utilizaron en el diseño y ocupaban lugar en la carpeta multimedia del sitio. Corregidos los breakpoint y detalles del diseño responsive de todas las paginas del sitio web. Nuevas animaciones en textos del index y nuevos emojis en distintas páginas del sitio para emparejar más el motivo del sitio con su contenido actual. Se agregaron algunas variables nuevas.
+        El sitio web ahora se encuentra alojado en 000webhost.com bajo el dominio de:
+         https://gema-nails.000webhostapp.com/
+
 V 1.6- Se corrige en altura el tamaño del menu de navegacion superior de todas las paginas del sitio. Se añaden efectos de hover en todas las paginas en seccion footer para los iconos de las redes. Se agregó a la pagina CLIENTES sombra al pasar el puntero sobre las imagenes, asimismo se elimina el efecto de ampliación en ancho de las img para evitar el estiramiento de elementos adyacentes que no quedaba del todo bien desde lo visual. Además se agrega un gif en la zona con espacio negativo de la misma pagina que refiere a la galeria del sitio. 
         Se añaden también animaciones en la pagina de CONTACTO y en Index para lograr mayor dinamismo en el sitio. Un nuevo gif reemplaza el icono de mapa en la pagina NOSOTROS. A su vez se corrige el texto en esta misma pagina en cuanto a su distancia entre otros elementos.
         En el INDEX.html se logra corregir el contraste de las letras del parrafo principal superior de la pagina respecto a la imagen de fondo (utilizando un nuevo div flotante y uso de box-shadow).
