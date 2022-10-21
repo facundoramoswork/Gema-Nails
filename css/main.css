@@ -1411,7 +1411,7 @@ ul {
     transition: none;
     filter: none; }
   .mainSecundarios img:hover {
-    width: 30rem; } }
+    width: 25rem; } }
 
 @media (max-width: 500px) {
   .navFlex ul {
